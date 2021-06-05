@@ -119,7 +119,9 @@
     <link rel='stylesheet' id='ekit-responsive-css'
           href="{% static 'wp-content/plugins/elementskit-lite/widgets/init/assets/css/responsiveac31.css' %}"
           type='text/css' media='all'/>
-    <link rel='stylesheet' id='google-fonts-1-css' href="{% static 'css/g-fonts.css' %}" type='text/css' media='all'/>
+    <link rel='stylesheet' id='google-fonts-1-css'
+          href='https://fonts.googleapis.com/css?family=Montserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CWork+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=auto&amp;ver=5.7.2'
+          type='text/css' media='all'/>
     <link rel='stylesheet' id='elementor-icons-shared-1-css'
           href="{% static 'wp-content/plugins/happy-elementor-addons/assets/fonts/style.minb4fc.css' %}"
           type='text/css' media='all'/>
@@ -147,10 +149,6 @@
     <script type='text/javascript'
             src="{% static 'wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.mine1e3.js' %}"
             id='font-awesome-4-shim-js'></script>
-    <link rel="https://api.w.org/" href="{% static 'wp-json/index.html' %}"/>
-    <link rel="alternate" type="application/json" href="{% static 'wp-json/wp/v2/pages/297.json' %}"/>
-    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="{% static 'wp-includes/wlwmanifest.xml' %}"/>
-
     <link rel="canonical" href="index.html"/>
     <link rel='shortlink' href='index.html'/>
     <link rel="alternate" type="application/json+oembed"
@@ -1870,7 +1868,7 @@
 <script type='text/javascript'
         src="{% static 'wp-content/plugins/elementskit-lite/widgets/init/assets/js/widget-scriptsac31.js' %}"
         id='ekit-widget-scripts-js'></script>
-<script type='text/javascript' src="{% static 'wp-includes/js/wp-embed.min9f31.js' id='wp-embed-js' %}"></script>
+<script type='text/javascript' src="{% static 'wp-includes/js/wp-embed.min9f31.js' %}" id='wp-embed-js' ></script>
 <script type='text/javascript'
         src="{% static 'wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.minf269.js' %}"
         id='smartmenus-js'></script>
@@ -1887,6 +1885,9 @@
         id='elementor-webpack-runtime-js'></script>
 <script type='text/javascript' src="{% static 'wp-content/plugins/elementor/assets/js/frontend-modules.mine1e3.js' %}"
         id='elementor-frontend-modules-js'></script>
+<script type='text/javascript'
+        src="{% static 'wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.mindeae.js' %}"
+        id='elementor-sticky-js'></script>
 <script type='text/javascript' id='elementor-pro-frontend-js-before'>
     var ElementorProFrontendConfig = {
         "ajaxurl": "https:\/\/newsite.dogefather.space\/wp-admin\/admin-ajax.php",
@@ -1918,9 +1919,6 @@
         "lottie": {"defaultAnimationUrl": "{% static 'wp-content/plugins/elementor-pro/modules/lottie/assets/animations/default.json' %}"}
     };
 </script>
-<script type='text/javascript'
-        src="{% static 'wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.mindeae.js' %}"
-        id='elementor-sticky-js'></script>
 <script type='text/javascript' src="{% static 'wp-content/plugins/elementor-pro/assets/js/frontend.mindeae.js' %}"
         id='elementor-pro-frontend-js'></script>
 <script type='text/javascript'
