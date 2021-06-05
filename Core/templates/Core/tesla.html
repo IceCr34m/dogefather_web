@@ -1,10 +1,993 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% load i18n %}
+{% load static %}
+{% language 'en' %}
 
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Preconnect -->
+	<link rel="preconnect" href="https://fonts.gstatic.com/">
+	<!-- Title -->
+	<title>Dogefather Tesla wallet - Tesla Giveaway - $Dogefather BSC</title>
+	<meta name="description" content="Tesla wallet where you deposit cryptocurrency - Dogefather token -  for a Tesla giveaway.">
+	<!--DF Ben added for SEO optimization -->
+	<meta name="keywords" content="Tesla, giveaway, dogefather, DogeFather, dogefatherBSC, doge, father, cryptocurrency, token, dogecoin, elon, musk, BSC">
+	<!-- Favicon -->
+	<link href="{% static 'favicon.ico' %}" type="image/png" rel="icon">
+	<!-- shortcut icon -->
+	<link rel="shortcut icon" href="{% static 'img/logo-coin-transparent.png' %}" alt="Dogefather logo-coin-transparent">
+	<!-- og -->
+	<meta property="og:url" content="{{ site_url.url }}">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Dogefather token - $Dogefather BSC">
+	<meta property="og:description" content="Dogefather is a frictionless yield generation token hard-coded on its smart contract with a charity-based NFT marketplace. Created on Binance Smart Chain.">
+	<meta property="og:site_name" content="Dogefather token - $Dogefather BSC">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:image" content="{% static 'img/logo-coin-transparent_small.png' %}" alt="Dogefather logo-coin-transparent_small">
+	<meta property="article:author" content="@https://twitter.com/dogefatherBSC_">
+	<!-- twitter -->
+    <meta name="twitter:title" content="Dogefather token - $Dogefather BSC">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="Dogefatherbsc_">
+    <meta name="twitter:description" content="Dogefather is a frictionless yield generation token hard-coded on its smart contract with a charity-based NFT marketplace. Created on Binance Smart Chain.">
+	<meta name="twitter:image" content="{% static 'img/logo-coin-transparent_small.png' %}" alt="Dogefather logo-coin-transparent_small 1">
+    <meta name="twitter:creator" content="@Dogefatherbsc_">
+    <!-- bots -->
+    <meta name='robots' content='max-image-preview:large'>
+    <meta name="robots" content="max-video-preview:-1">
+	<!-- CSS -->
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@800&amp;family=Montserrat:wght@300;400&amp;display=swap" rel="stylesheet">
+	<link href="css/plugins.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">	<script type="text/javascript">
+        window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/newsite.dogefather.space\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.7.2"}};
+        !function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+    </script>
+    <style type="text/css">
+img.wp-smiley,
+img.emoji {
+display: inline !important;
+border: none !important;
+box-shadow: none !important;
+height: 1em !important;
+width: 1em !important;
+margin: 0em !important;
+vertical-align: -0.1em !important;
+background: none !important;
+padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='elementor-frontend-css'  href='wp-content/plugins/elementor/assets/css/frontend.mine1e3.css?ver=3.2.4' type='text/css' media='all' />
+<style id='elementor-frontend-inline-css' type='text/css'>
+@font-face{font-family:eicons;src:url(wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons0b93.eot?5.10.0);src:url(https://newsite.dogefather.space/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.10.0#iefix) format("embedded-opentype"),url(https://newsite.dogefather.space/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff2?5.10.0) format("woff2"),url(https://newsite.dogefather.space/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff?5.10.0) format("woff"),url(https://newsite.dogefather.space/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.ttf?5.10.0) format("truetype"),url(https://newsite.dogefather.space/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.svg?5.10.0#eicon) format("svg");font-weight:400;font-style:normal}
+</style>
+<link rel='stylesheet' id='elementor-post-478-css'  href='wp-content/uploads/elementor/css/post-4784ab4.css?ver=1622757199' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-499-css'  href='wp-content/uploads/elementor/css/post-499ed0b.css?ver=1622754643' type='text/css' media='all' />
+<link rel='stylesheet' id='wsp-main-style-css'  href='wp-content/plugins/wp-smart-preloader/assets/css/wsp-front-preloaderd50e.css?ver=1.14' type='text/css' media='all' />
+<link rel='stylesheet' id='wsp-style-css'  href='wp-content/plugins/wp-smart-preloader/assets/css/wsp-smart-preload-styled50e.css?ver=1.14' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='wp-includes/css/dist/block-library/style.min9f31.css?ver=5.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='hello-elementor-css'  href='wp-content/themes/hello-elementor/style.min254d.css?ver=2.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='hello-elementor-theme-style-css'  href='wp-content/themes/hello-elementor/theme.min254d.css?ver=2.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-css'  href='wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min21f9.css?ver=5.11.0' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-animations-css'  href='wp-content/plugins/elementor/assets/lib/animations/animations.mine1e3.css?ver=3.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-35-css'  href='wp-content/uploads/elementor/css/post-35ed0b.css?ver=1622754643' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-pro-css'  href='wp-content/plugins/elementor-pro/assets/css/frontend.mindeae.css?ver=3.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-5-all-css'  href='wp-content/plugins/elementor/assets/lib/font-awesome/css/all.mine1e3.css?ver=3.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-4-shim-css'  href='wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.mine1e3.css?ver=3.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='elementskit-css-widgetarea-control-editor-css'  href='wp-content/plugins/elementskit-lite/modules/controls/assets/css/widgetarea-editorac31.css?ver=2.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-297-css'  href='wp-content/uploads/elementor/css/post-297751d.css?ver=1622757020' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-1034-css'  href='wp-content/uploads/elementor/css/post-1034ed0b.css?ver=1622754643' type='text/css' media='all' />
+<link rel='stylesheet' id='happy-icons-css'  href='wp-content/plugins/happy-elementor-addons/assets/fonts/style.minb4fc.css?ver=2.24.1' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min1849.css?ver=4.7.0' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-ekiticons-css'  href='wp-content/plugins/elementskit-lite/modules/elementskit-icon-pack/assets/css/ekiticonsac31.css?ver=2.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='ekit-widget-styles-css'  href='wp-content/plugins/elementskit-lite/widgets/init/assets/css/widget-stylesac31.css?ver=2.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='ekit-responsive-css'  href='wp-content/plugins/elementskit-lite/widgets/init/assets/css/responsiveac31.css?ver=2.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='google-fonts-1-css'  href='https://fonts.googleapis.com/css?family=Montserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CWork+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=auto&amp;ver=5.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-shared-1-css'  href='wp-content/plugins/happy-elementor-addons/assets/fonts/style.minb4fc.css?ver=2.24.1' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-happy-icons-css'  href='wp-content/plugins/happy-elementor-addons/assets/fonts/style.minb4fc.css?ver=2.24.1' type='text/css' media='all' />
+<script type='text/javascript' src='wp-includes/js/jquery/jquery.min9d52.js?ver=3.5.1' id='jquery-core-js'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.mind617.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' id='wsp-main-script-js-extra'>
+/* <![CDATA[ */
+var wsp_obj = {"loader":"Custom Animation","custom_animation":"<div id=\"loader-wrapper\">\r\n<div id=\"loader\"><\/div>\r\n<div class=\"loader-section section-left\"><\/div>\r\n<div class=\"loader-section section-right\"><\/div>\r\n\t\t\t\r\n<\/div> ","custom_css":"#loader-wrapper {\r\n\tposition: fixed;\r\n\ttop: 0;\r\n\tleft: 0;\r\n\twidth: 100%;\r\n\theight: 100%;\r\n\tz-index: 1000;\r\n}\r\n\r\n#loader {\r\n\tdisplay: block;\r\n\tposition: relative;\r\n\tleft: 50%;\r\n\ttop: 50%;\r\n\twidth: 150px;\r\n\theight: 150px;\r\n\tmargin: -75px 0 0 -75px;\r\n\tborder-radius: 50%;\r\n\tborder: 3px solid transparent;\r\n\tborder-top-color: #303030;\r\n\t\r\n\t  -webkit-animation: spin 2s linear infinite; \/* Chrome, Opera 15+, Safari 5+ *\/\r\n          animation: spin 2s linear infinite; \/* Chrome, Firefox 16+, IE 10+, Opera *\/\r\n\tz-index:1001;\t  \r\n}\r\n\r\n    #loader:before {\r\n\t\tcontent:\"\";\r\n\t\tposition: absolute;\r\n\t\ttop: 5px;\r\n\t\tleft: 5px;\r\n\t\tright: 5px;\r\n\t\tbottom: 5px;\r\n\t\tborder-radius: 50%;\r\n\t\tborder: 3px solid transparent;\r\n\t\tborder-top-color: #ff9a06;\r\n\t\t\r\n\t\t  -webkit-animation: spin 3s linear infinite; \/* Chrome, Opera 15+, Safari 5+ *\/\r\n          animation: spin 3s linear infinite; \/* Chrome, Firefox 16+, IE 10+, Opera *\/\r\n\t}\r\n\r\n\t    #loader:after {\r\n\t\tcontent:\"\";\r\n\t\tposition: absolute;\r\n\t\ttop: 15px;\r\n\t\tleft: 15px;\r\n\t\tright: 15px;\r\n\t\tbottom: 15px;\r\n\t\tborder-radius: 50%;\r\n\t\tborder: 3px solid transparent;\r\n\t\tborder-top-color: #f7f0e4;\r\n\t\t\r\n\t   -webkit-animation: spin 1.5s linear infinite; \/* Chrome, Opera 15+, Safari 5+ *\/\r\n               animation: spin 1.5s linear infinite; \/* Chrome, Firefox 16+, IE 10+, Opera *\/\r\n\t}\r\n\t\r\n\t    @-webkit-keyframes spin { \r\n           0%   { \r\n           -webkit-transform: rotate(0deg);  \/* Chrome, Opera 15+, Safari 3.1+  *\/\r\n           -ms-transform: rotate(0deg);  \/* IE 9 *\/\r\n           transform: rotate(0deg);  \/* Firefox 16+, IE 10+, Opera *\/\r\n\t\t    }\r\n\r\n            100% { \r\n           -webkit-transform: rotate(360deg);  \/* Chrome, Opera 15+, Safari 3.1+  *\/\r\n           -ms-transform: rotate(360deg);  \/* IE 9 *\/\r\n           transform: rotate(360deg);  \/* Firefox 16+, IE 10+, Opera *\/\r\n\r\n\t       }\r\n        }\r\n\r\n        @keyframes spin {\r\n           0%   { \r\n           -webkit-transform: rotate(0deg);  \/* Chrome, Opera 15+, Safari 3.1+  *\/\r\n           -ms-transform: rotate(0deg);  \/* IE 9 *\/\r\n           transform: rotate(0deg);  \/* Firefox 16+, IE 10+, Opera *\/\r\n\r\n\t\t   }\r\n\r\n           100% { \r\n           -webkit-transform: rotate(360deg);  \/* Chrome, Opera 15+, Safari 3.1+  *\/\r\n           -ms-transform: rotate(360deg);  \/* IE 9 *\/\r\n           transform: rotate(360deg);  \/* Firefox 16+, IE 10+, Opera *\/\r\n\r\n\t\t   }\r\n\t\t}\r\n\t\r\n\t    #loader-wrapper .loader-section {\r\n\t\t    position:fixed;\r\n\t\t\ttop: 0;\r\n\t\t\twidth: 51%;\r\n\t\t\theight: 100%;\r\n\t\t\tbackground: #FFD236;\r\n\t\t\tz-index: 1000;\r\n\t\t\t\r\n\t\t}\r\n\t\t\r\n\t\t#loader-wrapper .loader-section.section-left {\r\n\t\t\tleft:0;\r\n\t\t}\r\n\t\t\r\n\t\t#loader-wrapper .loader-section.section-right {\r\n\t\t\tright:0;\r\n\t\t}\r\n\t\t\r\n\t\t\/* Loaded Styles *\/\r\n\t\t.loaded #loader-wrapper .loader-section.section-left {\r\n           -webkit-transform: translateX(-100%);  \/* Chrome, Opera 15+, Safari 3.1+  *\/\r\n               -ms-transform: translateX(-100%);  \/* IE 9 *\/\r\n                   transform: translateX(-100%);  \/* Firefox 16+, IE 10+, Opera *\/\r\n\r\n            -webkit-transition: all 1.7s 1.3s cubic-bezier(0.645, 0.045,0.355, 1.000);  \/* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  *\/\r\n                    transition: all 1.7s 1.3s cubic-bezier(0.645, 0.045,0.355, 1.000);  \/* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  *\/\t\t\t   \r\n\t\t}\r\n\t\t\r\n\t\t.loaded #loader-wrapper .loader-section.section-right {\r\n           -webkit-transform: translateX(100%);  \/* Chrome, Opera 15+, Safari 3.1+  *\/\r\n               -ms-transform: translateX(100%);  \/* IE 9 *\/\r\n                   transform: translateX(100%);  \/* Firefox 16+, IE 10+, Opera *\/\t\r\n\r\n            -webkit-transition: all 1.7s 1.3s cubic-bezier(0.645, 0.045,0.355, 1.000);  \/* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  *\/\r\n                    transition: all 1.7s 1.3s cubic-bezier(0.645, 0.045,0.355, 1.000);  \/* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  *\/\t\t\t   \r\n\t\t}\t\t\r\n\t\t.loaded #loader {\r\n\t\t\topacity: 0;\r\n\t\t\t\r\n            -webkit-transition: all 1.3s ease-out;  \/* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  *\/\r\n                    transition: all 1.3s ease-out;  \/* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  *\/\t\t\t\r\n\t\t}\r\n\t\t.loaded #loader-wrapper {\r\n\t\t\tvisibility: hidden;\r\n           -webkit-transform: translateY(-100%);  \/* Chrome, Opera 15+, Safari 3.1+  *\/\r\n               -ms-transform: translateY(-100%);  \/* IE 9 *\/\r\n                   transform: translateY(-100%);  \/* Firefox 16+, IE 10+, Opera *\/\t\t\t\r\n\t\t\t\r\n            -webkit-transition: all 1.3s 2s ease-out;  \/* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  *\/\r\n                    transition: all 1.3s 2s ease-out;  \/* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  *\/\t\t\t\t\r\n\t\t}","delay":"4","fadeout":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/wp-smart-preloader/assets/js/wsp-main-scriptd50e.js?ver=1.14' id='wsp-main-script-js'></script>
+<script type='text/javascript' src='wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.mine1e3.js?ver=3.2.4' id='font-awesome-4-shim-js'></script>
+<link rel="https://api.w.org/" href="wp-json/index.html" /><link rel="alternate" type="application/json" href="wp-json/wp/v2/pages/297.json" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 5.7.2" />
+<link rel="canonical" href="index.html" />
+<link rel='shortlink' href='index.html' />
+<link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed35e8.json?url=https%3A%2F%2Fnewsite.dogefather.space%2F" />
+<link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed91e0?url=https%3A%2F%2Fnewsite.dogefather.space%2F&amp;format=xml" />
+    <style type="text/css" id="wp-custom-css">
+        media only screen and (max-width: 760px) {
+html{
+    background-repeat: no-repeat;
+    position: center center;
+    background-size: cover;
+}
+}
+.list li{
+line-height: 1.44;
+padding: 5px 0;
+position: relative;
+color: #415076;
+}
+.list-number-s2 li{
+padding-bottom: 10px;
+list-style: none;
+
+}
+.list-number-s2 li span{
+    width: 30px;
+height: 30px;
+line-height: 30px;
+text-align: center;
+background: #303030;
+border-radius: 50%;
+color: white;
+font-weight: 400;
+}
+.list-number-s2 p{
+color: #d4d4d4;
+}		</style>
+    </head>
+    <body class="home page-template page-template-elementor_header_footer page page-id-297 wp-custom-logo wp-smart-body elementor-default elementor-template-full-width elementor-kit-35 elementor-page elementor-page-297">
+        <div class="ekit-template-content-markup ekit-template-content-header ekit-template-content-theme-support">
+                <div data-elementor-type="wp-post" data-elementor-id="478" class="elementor elementor-478" data-elementor-settings="[]">
+                                    <div class="elementor-section-wrap">
+                                    <section class="elementor-section elementor-top-section elementor-element elementor-element-6038814f elementor-section-content-middle elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="6038814f" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+                                <div class="elementor-container elementor-column-gap-no">
+                            <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-64168b73" data-id="64168b73" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-1b096c33 elementor-widget elementor-widget-image" data-id="1b096c33" data-element_type="widget" data-widget_type="image.default">
+                        <div class="elementor-widget-container">
+                                                             <a href="index.html">       <img width="666" height="280" src="wp-content/uploads/2021/05/change-background.png" class="attachment-full size-full" alt="" loading="lazy" srcset="https://newsite.dogefather.space/wp-content/uploads/2021/05/change-background.png 666w, https://newsite.dogefather.space/wp-content/uploads/2021/05/change-background-300x126.png 300w" sizes="(max-width: 666px) 100vw, 666px" />	</a>														</div>
+                        </div>
+                            </div>
+                </div>
+                        <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-7253491e" data-id="7253491e" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-5e589d8e elementor-widget elementor-widget-ekit-nav-menu" data-id="5e589d8e" data-element_type="widget" data-widget_type="ekit-nav-menu.default">
+                        <div class="elementor-widget-container">
+                    <div class="ekit-wid-con ekit_menu_responsive_tablet" data-hamburger-icon="icon icon-menu-7" data-hamburger-icon-type="icon" data-responsive-breakpoint="1024">            <button class="elementskit-menu-hamburger elementskit-menu-toggler">
+                        <i aria-hidden="true" class="ekit-menu-icon icon icon-menu-7"></i>            </button>
+                    <div id="ekit-megamenu-menu-1" class="elementskit-menu-container elementskit-menu-offcanvas-elements elementskit-navbar-nav-default elementskit_line_arrow ekit-nav-menu-one-page-"><ul id="main-menu" class="elementskit-navbar-nav elementskit-menu-po-right submenu-click-on-icon"><li id="menu-item-835" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-835 nav-item elementskit-dropdown-has relative_position elementskit-dropdown-menu-default_width elementskit-mobile-builder-content" data-vertical-menu=750px><a href="#" class="ekit-menu-nav-link ekit-menu-dropdown-toggle">App<i class="icon icon-down-arrow1 elementskit-submenu-indicator"></i></a>
+        <ul class="elementskit-dropdown elementskit-submenu-panel">
+            <li id="menu-item-839" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-839 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="#" class=" dropdown-item">Swap Coming Soon.</a></ul>
+        </li>
+        <li id="menu-item-837" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-837 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="index.html#contribute" class="ekit-menu-nav-link">Contribute</a></li>
+
+        <li id="menu-item-836" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-836 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="https://www.dextools.io/app/pancakeswap/pair-explorer/0xd6f91e5ecfef046a5400541770f1435747332d31" target="_blank" class="ekit-menu-nav-link">Price Chart</a></li>
+
+        <li id="menu-item-840" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-840 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="tesla.html" class="ekit-menu-nav-link">Tesla Wallet <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tesla_T_symbol.svg/510px-Tesla_T_symbol.svg.png" width="15%" ></a></li>
+        </ul>
+                        <div class="elementskit-nav-identity-panel">
+                            <div class="elementskit-site-title">
+                                <a class="elementskit-nav-logo" href="index.html" target="_self" rel="">
+                                    <img src="#" alt="">
+                                </a>
+                            </div>
+                            <button class="elementskit-menu-close elementskit-menu-toggler" type="button">X</button>
+                        </div>
+                    </div><div class="elementskit-menu-overlay elementskit-menu-offcanvas-elements elementskit-menu-toggler ekit-nav-menu--overlay"></div></div>		</div>
+                        </div>
+                            </div>
+                </div>
+                        <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-545f3728 elementor-hidden-tablet elementor-hidden-phone" data-id="545f3728" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-1b8f3e2f elementor-widget elementor-widget-elementskit-button" data-id="1b8f3e2f" data-element_type="widget" data-widget_type="elementskit-button.default">
+                        <div class="elementor-widget-container">
+                    <div class="ekit-wid-con" >		<div class="ekit-btn-wraper">
+                        <a href="https://bscscan.com/token/0x3D29Aa78fB558F84112bbC48a84F371147A920C9" target="_blank" class="elementskit-btn  whitespace--normal" >
+                            CONTRACT
+                            <i aria-hidden="true" class="hm hm-unfold-paper"></i>
+                        </a>
+                                </div>
+                </div>		</div>
+                        </div>
+                            </div>
+                </div>
+                                    </div>
+                </section>
+                                </div>
+                            </div>
+    <div data-elementor-type="wp-page" data-elementor-id="297" class="elementor elementor-297" data-elementor-settings="[]">
+                        <div class="elementor-section-wrap">
+                        <section class="elementor-section elementor-top-section elementor-element elementor-element-2644dc25 elementor-section-content-middle elementor-section-height-min-height elementor-reverse-tablet elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="2644dc25" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+                        <div class="elementor-background-overlay"></div>
+	<div id="preloader">
+		<div class="scroll-static"></div>
+	</div><!--
+    <div class="main-wrapper">
+		<div class="nav-bar">
+			<div class="scroll-indicator"></div>
+			<nav>
+				<ul id="menu-list">
+					<li class="nav-item nav-link-home">
+						<a class="nav-link" href="index.html#home" data-text="Dogefather">
+							<img src="img/icons/dog-logo-transparent-icon.png" alt="binance icon"> Dogefather
+						</a>
+					</li>
+					<li class="nav-item nav-link-token-info">
+						<a class="nav-link" href="index.html#token-info" data-text="token-info">
+							<i class="fas fa-info-square"></i> Token Info
+						</a>
+					</li>
+					<li class="nav-item nav-link-about">
+						<a class="nav-link" href="index.html#about" data-text="About">
+							<i class="fas fa-file-alt"></i> About
+						</a>
+					</li>
+					<li class="nav-item nav-link-contract">
+						<a class="nav-link" href="index.html#contract" data-text="Contract">
+							<i class="fas fa-file-search"></i> Contract
+						</a>
+					</li>
+					<li class="nav-item nav-link-how_to_buy">
+						<a class="nav-link" href="index.html#how_to_buy" data-text="How to Buy">
+							<i class="fas fa-question-square"></i> How to Buy
+						</a>
+					</li>
+					<li class="nav-item nav-link-nft">
+						<a class="nav-link" href="index.html#nft" data-text="NFT<sup>soon</sup>">
+							<i class="fas fa-palette"></i> NFT<sup>soon</sup>
+						</a>
+					</li>
+					<li class="nav-item nav-link-faq">
+						<a class="nav-link" href="index.html#faq" data-text="Faq">
+							<i class="fas fa-comments-alt"></i> FAQ
+						</a>
+					</li>
+                    <li class="nav-item nav-link-team">
+						<a class="nav-link" href="index.html#team" data-text="Team">
+							<i class="fas fa-users"></i> Team
+						</a>
+					</li>
+					<li class="nav-item nav-link-contact">
+						<a class="nav-link" href="#contact" data-text="Contact">
+							<i class="fab fa-telegram-plane"></i> Contact
+						</a>
+					</li>
+					<li class="nav-item nav-link-tesla-giveaway">
+						<a class="nav-link" href="tesla.html" data-text="tesla-giveaway">
+							<img src="img/icons/tesla-icon.png" alt="tesla icon"> Giveaway
+						</a>
+					</li>
+				</ul>
+                <div id="google_translate_element" class="text-center" style="margin-top: 180px;"></div>
+			</nav>
+		</div>
+		<div class="nav-mobile">
+			<nav class="navbar fixed-top navbar-light default-bg">
+				<a class="navbar-brand mx-auto d-flex" href="index.html#">
+					<img src="img/logo-coin-transparent.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
+					<span class="mobile-brand-title">DOGEFATHER (BSC)</span>
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+				  <ul class="navbar-nav">
+					<li class="nav-item nav-link-token-info">
+						<a class="nav-link" href="index.html#token-info" data-text="token-info">
+							<i class="fas fa-info-square"></i> Token Info
+						</a>
+					</li>
+					<li class="nav-item nav-link-about">
+						<a class="nav-link" href="index.html#about" data-text="About">
+							<i class="fas fa-file-alt"></i> About
+						</a>
+					</li>
+					<li class="nav-item nav-link-contract">
+						<a class="nav-link" href="index.html#contract" data-text="Contract">
+							<i class="fas fa-file-search"></i> Contract
+						</a>
+					</li>
+					<li class="nav-item nav-link-how_to_buy">
+						<a class="nav-link" href="index.html#how_to_buy" data-text="How to Buy">
+							<i class="fas fa-question-square"></i> How to Buy
+						</a>
+					</li>
+					<li class="nav-item nav-link-nft">
+						<a class="nav-link" href="index.html#nft" data-text="NFT<sup>soon</sup>">
+							<i class="fas fa-palette"></i> NFT<sup>soon</sup>
+						</a>
+					</li>
+					<li class="nav-item nav-link-faq">
+						<a class="nav-link" href="index.html#faq" data-text="Faq">
+							<i class="fas fa-comments-alt"></i> FAQ
+						</a>
+					</li>
+                    <li class="nav-item nav-link-team">
+						<a class="nav-link" href="index.html#team" data-text="Team">
+							<i class="fas fa-users"></i> Team
+						</a>
+					</li>
+					<li class="nav-item nav-link-contact">
+						<a class="nav-link" href="#contact" data-text="Contact">
+							<i class="fab fa-telegram-plane"></i> Contact
+						</a>
+					</li>
+                    <li class="nav-item nav-link-tesla-giveaway">
+						<a class="nav-link" href="tesla.html" data-text="tesla-giveaway">
+							<img src="img/icons/tesla-icon.png" alt="tesla icon"> Giveaway
+						</a>
+					</li>
+				  </ul>
+				</div>
+			</nav>
+		</div>-->
+		<!--<div class="errplace"></div>
+		<div class="scroll-left">
+			<p>New website
+				<span>coming soon!!!</span>
+			</p>
+		</div>-->
+
+            <div id="tesla-giveaway" class="wrapper tesla-giveaway-wrapper box-wrapper">
+                <div class="container-fluid">
+                    <div class="row justify-content-md-center text-center text-sm-left">
+                        <div class="col-12 text-center mb-5">
+                            <h1>
+                                DOGEFATHER TESLA WALLET
+                            </h1>
+                            <h4>
+                                World's first Tesla Wallet
+                            </h4>
+                        </div>
+                        <div class="col-lg-10 col-12">
+                            <div class="box-single box-single-tesla">
+                                <div class="row align-items-center text-center text-justify">
+                                    <div class="col-lg-7">
+                                        <h4>VISION</h4>
+                                        <p>
+                                            Dogefather has become the first crypto in the World to launch a game changing Tesla Wallet for
+                                            its holders. The vision behind the Tesla Wallet is to enable every single holder of the Dogefather
+                                            token to get a free Tesla in addition to the groundbreaking and ongoing returns on their
+                                            Dogefather investment.
+                                        </p>
+                                        <p>
+                                            Hard to Believe that every single token holder will have a Tesla? Scroll down and understand.
+                                        </p>
+                                        <p>
+                                            This project is aimed at enabling & facilitating a historic redistribution of wealth to the masses,
+                                            and since we have taken our inspiration from Elon Musk’s tweet, we are naming the enabler in
+                                            this historic revolution as the Tesla Wallet.
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-5 text-center">
+                                        <div style="position: relative; height: 0; overflow: hidden; padding-bottom: 56.25%; /* 16/9 ratio */ border-style: none;">
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/OElqnUpIWmw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="col-lg-10 col-12">
+                            <div class="box-single box-single-tesla">
+                                <div class="row align-items-center text-center text-justify">
+                                    <div class="col-12 mb-1 text-center">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tesla_T_symbol.svg/510px-Tesla_T_symbol.svg.png" class="mb-4" alt="Tesla logo" width="150px" height="150px" />
+                                        <h4>
+                                            DOGEFATHER TESLA WALLET ADDRESS
+                                        </h4>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <div class="address row justify-content-center d-block d-sm-inline-block">
+                                            <div class="copy-to-clipboard bsc col" style="background-color: #E61134;">
+                                                <div><strong class="text-white text-break">0x90d35AbCD3A4dae14f2b6c4bb4A56d309b588e73</strong></div>
+                                                <i data-clipboard-text="0x90d35AbCD3A4dae14f2b6c4bb4A56d309b588e73">
+                                                    <img src="img/icons/copy-ico.svg" alt="" />
+                                                    <strong class="text-white"> Copy </strong>
+                                                </i>
+                                            </div>
+                                            <a
+                                                href="https://bscscan.com/address/0x90d35AbCD3A4dae14f2b6c4bb4A56d309b588e73#tokentxns"
+                                                class="contract-link"
+                                                target="_blank"
+                                            >
+                                                View on bscscan
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="col-lg-10 col-12">
+                            <div class="box-single box-single-tesla">
+                                <div class="row align-items-center text-center text-justify">
+                                    <div class="col-lg-7">
+                                        <h4>
+                                            HOW TO PARTICIPATE
+                                        </h4>
+                                        <p>
+                                            Participants have to send <span style="color: white;">444,444,444</span> million Dogefather tokens to the above address in order
+                                            for the Tesla Wallet to receive a net of 400.000.000 million tokens.
+                                        </p>
+                                        <p>
+                                            If participants want to get multiple entries, we recommend making separate transactions.
+                                        </p>
+                                        <p>
+                                            *As thousands of users from Asia are messaging us that 4 is not their preferred number we can
+                                            make an exception for such holders and accept their bundled entries. (eg. 888,888,888 - is
+                                            taken as 2 entries).
+                                        </p>
+                                        <p>
+                                            The Community Volunteer Admins of the Tesla Wallet will have to do additional manual data
+                                            processing in such cases but the Dogefather community respects all cultures & will make the
+                                            extra effort.
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-5 text-center">
+                                        <div style="position: relative; height: 0; overflow: hidden; padding-bottom: 56.25%; /* 16/9 ratio */ border-style: none;">
+                                            <iframe
+                                                style="position: absolute; top:0; left: 0; width: 100%; height: 100%;"
+                                                src="https://www.youtube.com/embed/X5ql0aisgNc?color=white&amp;?rel=0">
+                                            </iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="col-lg-10 col-12">
+                            <div class="box-single box-single-tesla">
+                                <div class="row align-items-center text-center text-justify">
+                                    <div class="col-12">
+                                        <h4>WORLD'S FIRST TESLA WALLET</h4>
+                                        <p>
+                                            We are thrilled by the response to the Tesla Wallet initiative in less than 40 hours.
+                                            In order to reflect our process transparency to the Dogefather community, the core team
+                                            announced that the Data of all Tesla Wallet lifetime entries will be managed by representatives
+                                            from the community. We recruited a committee of  3 Dogefather Token holders from the Telegram group
+                                            who are now sorting and managing the Tesla Wallet data & will also be conducting the draws for us.
+                                            From today our 3 Volunteers will start publishing the compiled entry data by Date for all Community
+                                            Members and on all our social media platforms.
+                                        </p>
+                                        <p class="text-truncate">
+                                            <a
+                                                href="https://bscscan.com/address/0x90d35AbCD3A4dae14f2b6c4bb4A56d309b588e73"
+                                                title="Dogefather Tesla wallet address"
+                                                class="main-color mb-2"
+                                                target="_blank"
+                                            >
+                                                Dogefather Tesla Wallet: 0x90d35AbCD3A4dae14f2b6c4bb4A56d309b588e73
+                                            </a>
+                                        </p>
+                                        <h4 class="main-color">TESLA WALLET FOR THE COMMUNITY - MANAGED BY THE COMMUNITY</h4>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="table-responsive">
+                                                        <table class="table table-bordered">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">Day</th>
+                                                                    <th scope="col">Document Name</th>
+                                                                    <th scope="col">Actions</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th scope="row"><p style="color:black;">1</th>
+                                                                    <td><p style="color:black;">9TH MAY 2021 Address Audit By Community</p></p></td>
+                                                                    <td>
+                                                                        <a class="btn btn-warning" href="pdf/9TH_MAY_2021_Address_Audit_By_Community.pdf" target="_blank">
+                                                                            <i class="far fa-eye"></i>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">2</th>
+                                                                    <td>10TH MAY 2021 Address Audit By Community</td>
+                                                                    <td>
+                                                                        <a class="btn btn-warning" href="pdf/10TH_MAY_2021_Address_Audit_By_Community.pdf" target="_blank">
+                                                                            <i class="far fa-eye"></i>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row"><p style="color:black;">3</th>
+                                                                    <td><p style="color:black;">11TH MAY 2021 Address Audit By Community</p></p></td>
+                                                                    <td>
+                                                                        <a class="btn btn-warning" href="pdf/11TH_MAY_2021_Address_Audit_By_Community.pdf" target="_blank">
+                                                                            <i class="far fa-eye"></i>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">4</th>
+                                                                    <td>12TH MAY 2021 Address Audit By Community</td>
+                                                                    <td>
+                                                                        <a class="btn btn-warning" href="pdf/12TH_MAY_2021_Address_Audit_By_Community.pdf" target="_blank">
+                                                                            <i class="far fa-eye"></i>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row"><p style="color: black;">5</p></th>
+                                                                    <td><p style="color: black;">13TH MAY 2021 Address Audit By Community</p></td>
+                                                                    <td>
+                                                                        <a class="btn btn-warning" href="pdf/13TH_MAY_2021_Address_Audit_By_Community.pdf" target="_blank">
+                                                                            <i class="far fa-eye"></i>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">6</th>
+                                                                    <td>14TH MAY 2021 Address Audit By Community</td>
+                                                                    <td>
+                                                                        <a class="btn btn-warning" href="pdf/14TH_MAY_2021_Address_Audit_By_Community.pdf" target="_blank">
+                                                                            <i class="far fa-eye"></i>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="col-lg-10 col-12">
+                            <div class="box-single box-single-tesla">
+                                <div class="row align-items-center justify-content-center text-center text-justify">
+                                    <div class="col-md-9">
+                                        <h4 class="pb-2">
+                                            COMMON FAQs
+                                        </h4>
+                                        <div id="faq-accordion" class="accordion shadow">
+                                            <div class="card">
+                                                <div id="headingOne" class="card-header shadow-sm border-0 default-bg">
+                                                    <h6 class="mb-0 font-weight-bold">
+                                                        <a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="d-block position-relative text-dark text-uppercase collapsible-link py-2">
+                                                            NET vs Gross Tokens?
+                                                        </a>
+                                                    </h6>
+                                                </div>
+                                                <div id="collapseOne" aria-labelledby="headingOne" data-parent="#faq-accordion" class="collapse show">
+                                                    <div class="card-body p-5">
+                                                        <p class="font-weight-light m-0">
+                                                            In order for Tesla Wallet to receive 400 million NET Tokens you must transfer 444,444,444
+                                                            tokens from your wallet for the lifetime entry.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div id="headingTwo" class="card-header shadow-sm border-0">
+                                                    <h6 class="mb-0 font-weight-bold">
+                                                        <a href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="d-block position-relative collapsed text-dark text-uppercase collapsible-link py-2">
+                                                            I sent 400 Million Gross instead of NET?
+                                                        </a>
+                                                    </h6>
+                                                </div>
+                                                <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#faq-accordion" class="collapse">
+                                                    <div class="card-body p-5">
+                                                        <p class="font-weight-light m-0">
+                                                            No worries send another batch of 44,444,444 tokens and send us a snapshot of the extra
+                                                            transaction with TXID. We will combine and consider as one life-time entry.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div id="headingThree" class="card-header shadow-sm border-0">
+                                                    <h6 class="mb-0 font-weight-bold">
+                                                        <a href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="d-block position-relative collapsed text-dark text-uppercase collapsible-link py-2">
+                                                            I sent 440 Million tokens but the net amount reflect is slightly less than 400 Million<br> e.g.399,990,000?
+                                                        </a>
+                                                    </h6>
+                                                </div>
+                                                <div id="collapseThree" aria-labelledby="headingThree" data-parent="#faq-accordion" class="collapse">
+                                                    <div class="card-body p-5">
+                                                        <p class="font-weight-light m-0">
+                                                            No worries, any variation of less than 1% due to miscalculation of slippage will not be
+                                                            considered as a variation. Your lifetime entry is done.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div id="headingFour" class="card-header shadow-sm border-0">
+                                                    <h6 class="mb-0 font-weight-bold">
+                                                        <a href="#" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" class="d-block position-relative collapsed text-dark text-uppercase collapsible-link py-2">
+                                                            I am from a culture where I don’t like number 4?
+                                                        </a>
+                                                    </h6>
+                                                </div>
+                                                <div id="collapseFour" aria-labelledby="headingFour" data-parent="#faq-accordion" class="collapse">
+                                                    <div class="card-body p-5">
+                                                        <p class="font-weight-light m-0">
+                                                            Thousands of users from Asia are messaging us that 4 is not their preferred number we can
+                                                            make an exception for such holders and accept their bulk entries. This will mean admins having
+                                                            to do manual data processing in such cases but we respect all cultures & will make the extra
+                                                            effort. So if you don’t like number 4, send 888,888,888 tokens and we will register these as two
+                                                            independent lifetime entries.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div id="headingFive" class="card-header shadow-sm border-0">
+                                                    <h6 class="mb-0 font-weight-bold">
+                                                        <a href="#" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" class="d-block position-relative collapsed text-dark text-uppercase collapsible-link py-2">
+                                                            Where do we see our confirmations?
+                                                        </a>
+                                                    </h6>
+                                                </div>
+                                                <div id="collapseFive" aria-labelledby="headingFive" data-parent="#faq-accordion" class="collapse">
+                                                    <div class="card-body p-5">
+                                                        <p class="font-weight-light m-0">
+                                                            Your entries are all visible on BSC Scan. Our team will export all data and share the
+                                                            comprehensive list of entries with all holders on a weekly basis. The weekly list will show
+                                                            number of entries by wallet address and txid.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div id="headingSix" class="card-header shadow-sm border-0">
+                                                    <h6 class="mb-0 font-weight-bold">
+                                                        <a href="#" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" class="d-block position-relative collapsed text-dark text-uppercase collapsible-link py-2">
+                                                            What if I live in a country where Tesla does not accept blockchain payments yet<br> how will I get my Tesla?
+                                                        </a>
+                                                    </h6>
+                                                </div>
+                                                <div id="collapseSix" aria-labelledby="headingSix" data-parent="#faq-accordion" class="collapse">
+                                                    <div class="card-body p-5">
+                                                        <p class="font-weight-light m-0">
+                                                            In such cases we will arrange for a delivery of your car in US along with an immediate trade in
+                                                            through one of the re-distributors / dealers. All such trade ins will only happen after your
+                                                            authorized representative in US (friend / relative) has visited for the necessary photo
+                                                            opportunity. There will be a trade-in hit of approx. 15% charged by the dealer in all such cases.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div id="headingSeven" class="card-header shadow-sm border-0">
+                                                    <h6 class="mb-0 font-weight-bold">
+                                                        <a href="#" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven" class="d-block position-relative collapsed text-dark text-uppercase collapsible-link py-2">
+                                                            Will all of us have to wait for our Tesla until the price reaches the target of 0.00018?
+                                                        </a>
+                                                    </h6>
+                                                </div>
+                                                <div id="collapseSeven" aria-labelledby="headingSeven" data-parent="#faq-accordion" class="collapse">
+                                                    <div class="card-body p-5">
+                                                        <p class="font-weight-light m-0">
+                                                            No. The Tesla Wallet will keep sending out Teslas on the way up. Everytime collection amount
+                                                            will be equivalent to Tesla price in USD equivalent a car will be issued for the draw immediately.
+                                                            This means that our holders will continue to receive Teslas throughout our journey to final target
+                                                            price.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div id="headingEight" class="card-header shadow-sm border-0">
+                                                    <h6 class="mb-0 font-weight-bold">
+                                                        <a href="#" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight" class="d-block position-relative collapsed text-dark text-uppercase collapsible-link py-2">
+                                                            Is this Wallet only going to benefit Diamond Hand Holders?
+                                                        </a>
+                                                    </h6>
+                                                </div>
+                                                <div id="collapseEight" aria-labelledby="headingEight" data-parent="#faq-accordion" class="collapse">
+                                                    <div class="card-body p-5">
+                                                        <p class="font-weight-light m-0">
+                                                            No. The Tesla Wallet is for all holders. Diamond hand holders will have higher probability in the
+                                                            early draws but in the future the Tesla Wallet aims at rewarding every holder with a life-time
+                                                            entry in the Tesla Wallet.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div id="headingNine" class="card-header shadow-sm border-0">
+                                                    <h6 class="mb-0 font-weight-bold">
+                                                        <a href="#" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine" class="d-block position-relative collapsed text-dark text-uppercase collapsible-link py-2">
+                                                       If I have transferred my Dogefather tokens from my Wallet to another Wallet will that be <br>
+                                                            included in the 20% maximum selling criterion to classify Diamond Holders?
+                                                        </a>
+                                                    </h6>
+                                                </div>
+                                                <div id="collapseNine" aria-labelledby="headingNine" data-parent="#faq-accordion" class="collapse">
+                                                    <div class="card-body p-5">
+                                                        <p class="font-weight-light m-0">
+                                                            No. Token Transfer is not considered as Token Sale.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<p>
+				<br>
+			</p>
+			<div id="contact" class="wrapper contact-wrapper" data-animate data-animation-classes="about-inview">
+				<div class="container-fluid"></div>
+					<div class="col-md-12 text-center">
+						<a href="https://bscscan.com/token/0x3D29Aa78fB558F84112bbC48a84F371147A920C9" title="BSC" target="_blank">
+							<img src="img/blogo.png" class="img-fluid" alt="BSC" width="100px" height="100px">
+						</a>
+						<div class="mt-5 mb-5">
+							<a class="default-btn" href="https://t.me/dogefatherBSC" title="TELEGRAM" target="_blank">
+								<i class="fab fa-telegram fa-lg"></i> TELEGRAM
+							</a>
+							<a class="default-btn" href="https://discord.gg/hTrzNUKUAS" title="DISCORD" target="_blank">
+								<i class="fab fa-discord fa-lg"></i> DISCORD
+							</a>
+							<a class="default-btn" href="https://twitter.com/dogefatherBSC_" title="TWITTER" target="_blank">
+								<i class="fab fa-twitter-square fa-lg"></i> TWITTER
+							</a>
+							<a class="default-btn" href="https://www.tiktok.com/@dogefatherbsc_" title="TIKTOK" target="_blank">
+								<i class="fab fa-tiktok fa-lg"></i> TIKTOK
+							</a>
+							<a class="default-btn" href="https://dogefather.medium.com/" title="MEDIUM" target="_blank">
+								<i class="fab fa-medium fa-lg"></i> MEDIUM
+							</a>
+							<a class="default-btn" href="https://github.com/dogefatherBSC" title="GITHUB" target="_blank">
+								<i class="fab fa-github fa-lg"></i> GITHUB
+							</a>
+						</div>
+						<p>
+							Copyright © 2021 DogefatherBSC
+						</p>
+					</div>
+				</div>
+            </div>
+			<a class="default-btn scroll-to-top" href="#body"><i class="fas fa-arrow-to-top fa-lg"></i></a>
+		</div>
+    </div>
+
+    <div class="modal fade" id="wechatModal" tabindex="-1" role="dialog" aria-labelledby="wechatModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+		  <div class="modal-content">
+			<div class="modal-header text-center">
+			  <h5 class="modal-title text-dark w-100" id="wechatModalLabel">狗爹币中文群 Dogefather</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+				<img src="img/wechat-qr-code.png" class="img-fluid" alt="Wechat qr code" >
+			</div>
+		  </div>
+		</div>
+	  </div>
+
+
+    </div>
+</div>
+</div>
+<style type="text/css" media="all">#loader-wrapper {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 1000;
+}
+
+#loader {
+display: block;
+position: relative;
+left: 50%;
+top: 50%;
+width: 150px;
+height: 150px;
+margin: -75px 0 0 -75px;
+border-radius: 50%;
+border: 3px solid transparent;
+border-top-color: #303030;
+
+-webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+z-index:1001;
+}
+
+#loader:before {
+content:"";
+position: absolute;
+top: 5px;
+left: 5px;
+right: 5px;
+bottom: 5px;
+border-radius: 50%;
+border: 3px solid transparent;
+border-top-color: #ff9a06;
+
+-webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+#loader:after {
+content:"";
+position: absolute;
+top: 15px;
+left: 15px;
+right: 15px;
+bottom: 15px;
+border-radius: 50%;
+border: 3px solid transparent;
+border-top-color: #f7f0e4;
+
+-webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+@-webkit-keyframes spin {
+0%   {
+-webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+  */
+-ms-transform: rotate(0deg);  /* IE 9 */
+transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+}
+
+100% {
+-webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+  */
+-ms-transform: rotate(360deg);  /* IE 9 */
+transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+
+}
+}
+
+@keyframes spin {
+0%   {
+-webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+  */
+-ms-transform: rotate(0deg);  /* IE 9 */
+transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+
+}
+
+100% {
+-webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+  */
+-ms-transform: rotate(360deg);  /* IE 9 */
+transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+
+}
+}
+
+#loader-wrapper .loader-section {
+position:fixed;
+top: 0;
+width: 51%;
+height: 100%;
+background: #FFD236;
+z-index: 1000;
+
+}
+
+#loader-wrapper .loader-section.section-left {
+left:0;
+}
+
+#loader-wrapper .loader-section.section-right {
+right:0;
+}
+
+/* Loaded Styles */
+.loaded #loader-wrapper .loader-section.section-left {
+-webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+  */
+-ms-transform: translateX(-100%);  /* IE 9 */
+transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+-webkit-transition: all 1.7s 1.3s cubic-bezier(0.645, 0.045,0.355, 1.000);  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+transition: all 1.7s 1.3s cubic-bezier(0.645, 0.045,0.355, 1.000);  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+}
+
+.loaded #loader-wrapper .loader-section.section-right {
+-webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+  */
+-ms-transform: translateX(100%);  /* IE 9 */
+transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+
+-webkit-transition: all 1.7s 1.3s cubic-bezier(0.645, 0.045,0.355, 1.000);  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+transition: all 1.7s 1.3s cubic-bezier(0.645, 0.045,0.355, 1.000);  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+}
+.loaded #loader {
+opacity: 0;
+
+-webkit-transition: all 1.3s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+transition: all 1.3s ease-out;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+}
+.loaded #loader-wrapper {
+visibility: hidden;
+-webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+  */
+-ms-transform: translateY(-100%);  /* IE 9 */
+transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+-webkit-transition: all 1.3s 2s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+transition: all 1.3s 2s ease-out;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+}</style>		<div data-elementor-type="popup" data-elementor-id="1034" class="elementor elementor-1034 elementor-location-popup" data-elementor-settings="{&quot;open_selector&quot;:&quot;.wechat-pop&quot;,&quot;triggers&quot;:[],&quot;timing&quot;:[]}">
+<div class="elementor-section-wrap">
+<section class="elementor-section elementor-top-section elementor-element elementor-element-47b2586 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="47b2586" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+    <div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1198b7a" data-id="1198b7a" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+            <div class="elementor-element elementor-element-f407b14 elementor-widget elementor-widget-image" data-id="f407b14" data-element_type="widget" data-widget_type="image.default">
+<div class="elementor-widget-container">
+                                        <img width="693" height="855" src="wp-content/uploads/2021/05/Wechat-QR.png" class="attachment-large size-large" alt="" loading="lazy" srcset="https://newsite.dogefather.space/wp-content/uploads/2021/05/Wechat-QR.png 693w, https://newsite.dogefather.space/wp-content/uploads/2021/05/Wechat-QR-243x300.png 243w" sizes="(max-width: 693px) 100vw, 693px" />															</div>
+</div>
+</div>
+</div>
+        </div>
+</section>
+</div>
+</div>
+<script type='text/javascript' id='happy-elementor-addons-js-extra'>
+/* <![CDATA[ */
+var HappyLocalize = {"ajax_url":"https:\/\/newsite.dogefather.space\/wp-admin\/admin-ajax.php","nonce":"4bd61f367f"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/happy-elementor-addons/assets/js/happy-addons.minb4fc.js?ver=2.24.1' id='happy-elementor-addons-js'></script>
+<script type='text/javascript' src='wp-content/plugins/elementskit-lite/libs/framework/assets/js/frontend-scriptac31.js?ver=2.2.4' id='elementskit-framework-js-frontend-js'></script>
+<script type='text/javascript' id='elementskit-framework-js-frontend-js-after'>
+var elementskit = {
+resturl: 'https://newsite.dogefather.space/wp-json/elementskit/v1/',
+}
+
+
+</script>
+<script type='text/javascript' src='wp-content/plugins/elementskit-lite/widgets/init/assets/js/widget-scriptsac31.js?ver=2.2.4' id='ekit-widget-scripts-js'></script>
+<script type='text/javascript' src='wp-includes/js/wp-embed.min9f31.js?ver=5.7.2' id='wp-embed-js'></script>
+<script type='text/javascript' src='wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.minf269.js?ver=1.0.1' id='smartmenus-js'></script>
+<script type='text/javascript' src='wp-content/plugins/happy-elementor-addons/assets/vendor/anime/lib/anime.minb4fc.js?ver=2.24.1' id='anime-js'></script>
+<script type='text/javascript' src='wp-content/plugins/elementor/assets/lib/jquery-numerator/jquery-numerator.min3958.js?ver=0.2.1' id='jquery-numerator-js'></script>
+<script type='text/javascript' src='wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.mindeae.js?ver=3.2.1' id='elementor-pro-webpack-runtime-js'></script>
+<script type='text/javascript' src='wp-content/plugins/elementor/assets/js/webpack.runtime.mine1e3.js?ver=3.2.4' id='elementor-webpack-runtime-js'></script>
+<script type='text/javascript' src='wp-content/plugins/elementor/assets/js/frontend-modules.mine1e3.js?ver=3.2.4' id='elementor-frontend-modules-js'></script>
+<script type='text/javascript' src='wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.mindeae.js?ver=3.2.1' id='elementor-sticky-js'></script>
+<script type='text/javascript' id='elementor-pro-frontend-js-before'>
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/newsite.dogefather.space\/wp-admin\/admin-ajax.php","nonce":"ecf624e040","urls":{"assets":"https:\/\/newsite.dogefather.space\/wp-content\/plugins\/elementor-pro\/assets\/"},"i18n":{"toc_no_headings_found":"No headings were found on this page."},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"google":{"title":"Google+","has_counter":true},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/newsite.dogefather.space\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script type='text/javascript' src='wp-content/plugins/elementor-pro/assets/js/frontend.mindeae.js?ver=3.2.1' id='elementor-pro-frontend-js'></script>
+<script type='text/javascript' src='wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min05da.js?ver=4.0.2' id='elementor-waypoints-js'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/core.min35d0.js?ver=1.12.1' id='jquery-ui-core-js'></script>
+<script type='text/javascript' src='wp-content/plugins/elementor/assets/lib/swiper/swiper.min48f5.js?ver=5.3.6' id='swiper-js'></script>
+<script type='text/javascript' src='wp-content/plugins/elementor/assets/lib/share-link/share-link.mine1e3.js?ver=3.2.4' id='share-link-js'></script>
+<script type='text/javascript' src='wp-content/plugins/elementor/assets/lib/dialog/dialog.mina288.js?ver=4.8.1' id='elementor-dialog-js'></script>
+<script type='text/javascript' id='elementor-frontend-js-before'>
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1365,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1620,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"direction":"min","is_enabled":false}}},"version":"3.2.4","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"a11y_improvements":true,"landing-pages":true,"form-submissions":true},"urls":{"assets":"https:\/\/newsite.dogefather.space\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"body_background_background":"classic","active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":297,"title":"Dogefather","excerpt":"","featuredImage":false}};
+</script>
+<script type='text/javascript' src='wp-content/plugins/elementor/assets/js/frontend.mine1e3.js?ver=3.2.4' id='elementor-frontend-js'></script>
+<script type='text/javascript' id='elementor-frontend-js-after'>
+!function(t){var e=function(t,e,a){var s;return function(){var i=this,l=arguments,n=function(){s=null,a||t.apply(i,l)},o=a&&!s;clearTimeout(s),s=setTimeout(n,e),o&&t.apply(i,l)}};t(window).on("elementor/frontend/init",function(){var t,a=elementorModules.frontend.handlers.Base;t=a.extend({bindEvents:function(){this.run()},getDefaultSettings:function(){return{direction:"alternate",easing:"easeInOutSine",loop:!0,targets:this.findElement(".elementor-widget-container").get(0)}},onElementChange:e(function(t){-1!==t.indexOf("ha_floating")&&(this.anime&&this.anime.restart(),this.run())},400),getFxVal:function(t){return this.getElementSettings("ha_floating_fx_"+t)},run:function(){var t=this.getDefaultSettings();this.getFxVal("translate_toggle")&&((this.getFxVal("translate_x.size")||this.getFxVal("translate_x.sizes.to"))&&(t.translateX={value:[this.getFxVal("translate_x.sizes.from")||0,this.getFxVal("translate_x.size")||this.getFxVal("translate_x.sizes.to")],duration:this.getFxVal("translate_duration.size"),delay:this.getFxVal("translate_delay.size")||0}),(this.getFxVal("translate_y.size")||this.getFxVal("translate_y.sizes.to"))&&(t.translateY={value:[this.getFxVal("translate_y.sizes.from")||0,this.getFxVal("translate_y.size")||this.getFxVal("translate_y.sizes.to")],duration:this.getFxVal("translate_duration.size"),delay:this.getFxVal("translate_delay.size")||0})),this.getFxVal("rotate_toggle")&&((this.getFxVal("rotate_x.size")||this.getFxVal("rotate_x.sizes.to"))&&(t.rotateX={value:[this.getFxVal("rotate_x.sizes.from")||0,this.getFxVal("rotate_x.size")||this.getFxVal("rotate_x.sizes.to")],duration:this.getFxVal("rotate_duration.size"),delay:this.getFxVal("rotate_delay.size")||0}),(this.getFxVal("rotate_y.size")||this.getFxVal("rotate_y.sizes.to"))&&(t.rotateY={value:[this.getFxVal("rotate_y.sizes.from")||0,this.getFxVal("rotate_y.size")||this.getFxVal("rotate_y.sizes.to")],duration:this.getFxVal("rotate_duration.size"),delay:this.getFxVal("rotate_delay.size")||0}),(this.getFxVal("rotate_z.size")||this.getFxVal("rotate_z.sizes.to"))&&(t.rotateZ={value:[this.getFxVal("rotate_z.sizes.from")||0,this.getFxVal("rotate_z.size")||this.getFxVal("rotate_z.sizes.to")],duration:this.getFxVal("rotate_duration.size"),delay:this.getFxVal("rotate_delay.size")||0})),this.getFxVal("scale_toggle")&&((this.getFxVal("scale_x.size")||this.getFxVal("scale_x.sizes.to"))&&(t.scaleX={value:[this.getFxVal("scale_x.sizes.from")||0,this.getFxVal("scale_x.size")||this.getFxVal("scale_x.sizes.to")],duration:this.getFxVal("scale_duration.size"),delay:this.getFxVal("scale_delay.size")||0}),(this.getFxVal("scale_y.size")||this.getFxVal("scale_y.sizes.to"))&&(t.scaleY={value:[this.getFxVal("scale_y.sizes.from")||0,this.getFxVal("scale_y.size")||this.getFxVal("scale_y.sizes.to")],duration:this.getFxVal("scale_duration.size"),delay:this.getFxVal("scale_delay.size")||0})),(this.getFxVal("translate_toggle")||this.getFxVal("rotate_toggle")||this.getFxVal("scale_toggle"))&&(this.findElement(".elementor-widget-container").css("will-change","transform"),this.anime=window.anime&&window.anime(t))}}),elementorFrontend.hooks.addAction("frontend/element_ready/widget",function(e){elementorFrontend.elementsHandler.addHandler(t,{$element:e})})})}(jQuery);
+</script>
+<script type='text/javascript' src='wp-content/plugins/elementor-pro/assets/js/preloaded-elements-handlers.mindeae.js?ver=3.2.1' id='pro-preloaded-elements-handlers-js'></script>
+<script type='text/javascript' src='wp-content/plugins/elementskit-lite/widgets/init/assets/js/slick.minac31.js?ver=2.2.4' id='ekit-slick-js'></script>
+<script type='text/javascript' src='wp-content/plugins/elementskit-lite/widgets/init/assets/js/elementorac31.js?ver=2.2.4' id='elementskit-elementor-js'></script>
+<script type='text/javascript' src='wp-content/plugins/elementor/assets/js/preloaded-modules.mine1e3.js?ver=3.2.4' id='preloaded-modules-js'></script>
+<script type='text/javascript' src='wp-content/plugins/elementskit-lite/modules/controls/assets/js/widgetarea-editorac31.js?ver=2.2.4' id='elementskit-js-widgetarea-control-editor-js'></script>
+
+	<!-- JS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/clipboard.min.js"></script>
+	<script src="js/animate.min.js"></script>
+	<script src="js/velocity.min.js"></script>
+	<script src="js/main.js"></script>
+    <script type="text/javascript" src="../translate.google.com/translate_a/elementa0d8.js?cb=googleTranslateElementInit"></script>
 </body>
+
+<!-- Mirrored from dogefather.space/tesla.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 04 Jun 2021 05:27:59 GMT -->
 </html>

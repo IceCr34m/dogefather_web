@@ -20,5 +20,6 @@ from django.urls import include, path
 
 urlpatterns = [
     path('16FBF1F51E4D53E138BC224680267C/', admin.site.urls),
+    path('16FBF1F51E4D53E138BC224680267C/clearcache/', include('clearcache.urls')),
     path('', include('Core.urls')),
 ]

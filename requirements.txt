@@ -4,6 +4,7 @@ django-filter==2.4.0  # QuerySet filtering from URL
 django-extensions==3.1.0
 djangorestframework==3.12.4  # Web browsable APIs
 gunicorn==19.10.0  # Python WSGI HTTP Server for UNIX
+django-clearcache==1.2.1
 requests==2.25.1
 asgiref==3.3.4
 certifi==2020.12.5
