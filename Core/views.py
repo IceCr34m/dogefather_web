@@ -1,5 +1,6 @@
 from django.shortcuts import render
 import requests
+from dogefather_web.config import current_site_url
 from django.http import HttpResponseRedirect
 import json
 
@@ -35,9 +36,11 @@ def home_view(request):
     price_suffix = pancake_price.split(zeros)[1][:11 - num_zeros]
     price = {"prefix": zeros,
              'suffix':  price_suffix}
+    web_site_url = {'url': current_site_url}
 
     # contruct context and render
-    context = {"price": price}
+    context = {"price": price,
+               "site_url": web_site_url}
     return render(request, "Core/index.html", context)
 
 

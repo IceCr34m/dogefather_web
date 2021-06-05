@@ -2,5 +2,5 @@
 choice = 'local'
 
 if choice=='local':
-    website_url = 'http://127.0.0.1:8000'
+    current_site_url = 'http://127.0.0.1:8000'
 
