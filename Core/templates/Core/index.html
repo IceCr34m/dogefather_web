@@ -218,7 +218,7 @@
                                                 </li>
                                                 <li id="menu-item-837"
                                                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-837 nav-item elementskit-mobile-builder-content"
-                                                    data-vertical-menu=750px><a href="index.html#contribute"
+                                                    data-vertical-menu=750px><a href="#contribute"
                                                                                 class="ekit-menu-nav-link">Contribute</a>
                                                 </li>
 
@@ -230,9 +230,9 @@
 
                                                 <li id="menu-item-840"
                                                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-840 nav-item elementskit-mobile-builder-content"
-                                                    data-vertical-menu=750px><a href="tesla.html"
+                                                    data-vertical-menu=750px><a href="{% url 'tesla' %}"
                                                                                 class="ekit-menu-nav-link">Tesla Wallet
-                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tesla_T_symbol.svg/510px-Tesla_T_symbol.svg.png"
+                                                    <img src="{% static 'img/Tesla_T_symbol.svg.png' %}"
                                                          width="15%"></a></li>
                                             </ul>
                                             <div class="elementskit-nav-identity-panel">
@@ -296,7 +296,7 @@
         </li>
         <li id="menu-item-840"
             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-840 nav-item elementskit-mobile-builder-content"
-            data-vertical-menu="750px"><a href="tesla.html" class="ekit-menu-nav-link">Tesla Wallet</a></li>
+            data-vertical-menu="750px"><a href="{% url 'tesla' %}" class="ekit-menu-nav-link">Tesla Wallet</a></li>
         <li id="menu-item-836"
             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-836 nav-item elementskit-mobile-builder-content"
             data-vertical-menu="750px"><a
@@ -339,7 +339,7 @@
                                     charity-based NFT marketplace coming soon. We built this token on Binance Smart
                                     Chain so people can buy Dogefather with cheaper gas fees compared to other tokens
                                     built on the Ethereum network.</p>
-                                <p>Welcome to the <a class="main-color" title="#DOGEFATHERFAMILY"
+                                <p>Welcome to the <a class="main-color" title="#DOGEFATHERFAMILY"
                                                      href="https://twitter.com/hashtag/DogefatherFamily" target="_blank"
                                                      rel="noopener">#DOGEFATHERFAMILY</a>.</p></div>
                         </div>
@@ -357,10 +357,8 @@
                                             <div class="elementor-widget-container">
                                                 <div class="ekit-wid-con">
                                                     <div class="ekit-btn-wraper">
-                                                        <a href="https://www.pancakeswap.finance/" target="_blank"
+                                                        <a href="https://v1exchange.pancakeswap.finance/#/swap?outputCurrency=0x3D29Aa78fB558F84112bbC48a84F371147A920C9" target="_blank"
                                                            class="elementskit-btn  whitespace--normal">
-
-
                                                             BUY NOW </a>
                                                     </div>
                                                 </div>
@@ -435,11 +433,11 @@
                                                                 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-980">
                                                                     <a href="#"
                                                                        class="elementor-sub-item elementor-item-anchor"><i
-                                                                            class="fab fa-telegram"></i> Lorem</a></li>
+                                                                            class="fab fa-telegram"></i> Founder - Dogefather</a></li>
                                                                 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-981">
                                                                     <a href="#"
                                                                        class="elementor-sub-item elementor-item-anchor"><i
-                                                                            class="fab fa-telegram"></i>Lorem</a></li>
+                                                                            class="fab fa-telegram"></i>Co-Founder - Dogepapa</a></li>
                                                             </ul>
                                                         </li>
                                                         <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-982">
@@ -482,9 +480,9 @@
                         <div class="elementor-element elementor-element-7df3c08 elementor-widget elementor-widget-image"
                              data-id="7df3c08" data-element_type="widget" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img width="800" height="864" src="wp-content/uploads/2021/06/logo-948x1024.png"
+                                <img width="800" height="864" src="{% static 'wp-content/uploads/2021/06/logo-948x1024.png' %}"
                                      class="attachment-large size-large" alt="" loading="lazy"
-                                     srcset="https://newsite.dogefather.space/wp-content/uploads/2021/06/logo-948x1024.png 948w, https://newsite.dogefather.space/wp-content/uploads/2021/06/logo-278x300.png 278w, https://newsite.dogefather.space/wp-content/uploads/2021/06/logo-768x829.png 768w, https://newsite.dogefather.space/wp-content/uploads/2021/06/logo.png 1000w"
+                                     srcset="{% static 'wp-content/uploads/2021/06/logo-948x1024.png' %} 948w, {% static 'wp-content/uploads/2021/06/logo-278x300.png' %} 278w, {% static 'wp-content/uploads/2021/06/logo-768x829.png' %} 768w, {% static 'wp-content/uploads/2021/06/logo.png 1000w' %}"
                                      sizes="(max-width: 800px) 100vw, 800px"/></div>
                         </div>
                     </div>
@@ -652,7 +650,7 @@
                              data-id="32c0aeb" data-element_type="widget" data-widget_type="button.default">
                             <div class="elementor-widget-container">
                                 <div class="elementor-button-wrapper">
-                                    <a href="Dogefather_Whitepaper_V1.0a.pdf" target="_blank"
+                                    <a href="{% static 'Dogefather_Whitepaper_V1.0a.pdf' %}" target="_blank"
                                        class="elementor-button-link elementor-button elementor-size-sm" role="button">
 						<span class="elementor-button-content-wrapper">
 						<span class="elementor-button-icon elementor-align-icon-left">
@@ -701,10 +699,10 @@
                                         </div>
                                         <div class="exchanges-contaier" style="display: flex;
          align-items: center;">
-                                            <a href="https://exchange.pancakeswap.finance/#/swap" target="_blank">
-                                                <img src="wp-content/uploads/2021/05/pcs.png" style="width: 100px"/>
+                                            <a href="https://www.dextools.io/app/pancakeswap/pair-explorer/0xd6f91e5ecfef046a5400541770f1435747332d31" target="_blank">
+                                                <img src="{% static 'wp-content/uploads/2021/05/pcs.png' %}" style="width: 100px"/>
                                                 <a href="https://www.bkex.com/trade/DOGEFATHER_USDT" target="_blank">
-                                                    <img src="wp-content/uploads/2021/05/bkex-logo.png"
+                                                    <img src="{% static 'wp-content/uploads/2021/05/bkex-logo.png' %}"
                                                          style="width: 150px">
 
 
@@ -780,7 +778,7 @@
                         <div class="elementor-element elementor-element-ca3d2ca elementor-widget elementor-widget-image"
                              data-id="ca3d2ca" data-element_type="widget" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img src="wp-content/uploads/elementor/thumbs/Webp.net-resizeimage-1-p84xlflg0t3bxu228p5hww0kapk8uobdj7wn6md7o4.png"
+                                <img src="{% static 'wp-content/uploads/elementor/thumbs/Webp.net-resizeimage-1-p84xlflg0t3bxu228p5hww0kapk8uobdj7wn6md7o4.png' %}"
                                      title="Webp.net-resizeimage (1)" alt="Webp.net-resizeimage (1)"/></div>
                         </div>
                     </div>
@@ -900,9 +898,9 @@
                                             <div class="elementor-widget-container">
                                                 <div class="elementor-counter">
                                                     <div class="elementor-counter-number-wrapper">
-                                                        <span class="elementor-counter-number-prefix">0.0000000</span>
-                                                        <span class="elementor-counter-number" data-duration="2000"
-                                                              data-to-value="2000" data-from-value=""></span>
+                                                        <span class="elementor-counter-number-prefix">{{ price.prefix }}</span>
+                                                        <span class="elementor-counter-number" data-duration="{{ price.suffix }}"
+                                                              data-to-value="{{ price.suffix }}" data-from-value=""></span>
                                                         <span class="elementor-counter-number-suffix"></span>
                                                     </div>
                                                 </div>
@@ -1013,7 +1011,7 @@
                             <div class="elementor-widget-container">
                                 <div class="ekit-wid-con">
                                     <div class="ekit-btn-wraper">
-                                        <a href="http://dogefather.space/" class="elementskit-btn  whitespace--normal">
+                                        <a href="{% url 'home' %}" class="elementskit-btn  whitespace--normal">
 
 
                                             COMING SOON </a>
@@ -1029,7 +1027,7 @@
                         <div class="elementor-element elementor-element-d8684c7 elementor-widget elementor-widget-image"
                              data-id="d8684c7" data-element_type="widget" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img src="wp-content/uploads/elementor/thumbs/swap-p84xuzmcw8s2643h8dfd7fs372crs0n9wmdrr6yie8.png"
+                                <img src="{% static 'wp-content/uploads/elementor/thumbs/swap-p84xuzmcw8s2643h8dfd7fs372crs0n9wmdrr6yie8.png' %}"
                                      title="swap" alt="swap"/></div>
                         </div>
                     </div>
@@ -1064,10 +1062,10 @@
                                              data-widget_type="image.default">
                                             <div class="elementor-widget-container">
                                                 <img width="716" height="372"
-                                                     src="wp-content/uploads/2021/06/58e900c5eb97430e819064d5-1.png"
+                                                     src="{% static 'wp-content/uploads/2021/06/58e900c5eb97430e819064d5-1.png %}"
                                                      class="elementor-animation-pulse-grow attachment-large size-large"
                                                      alt="" loading="lazy"
-                                                     srcset="https://newsite.dogefather.space/wp-content/uploads/2021/06/58e900c5eb97430e819064d5-1.png 716w, https://newsite.dogefather.space/wp-content/uploads/2021/06/58e900c5eb97430e819064d5-1-300x156.png 300w"
+                                                     srcset="{% static 'wp-content/uploads/2021/06/58e900c5eb97430e819064d5-1.png'  %} 716w, {% static 'wp-content/uploads/2021/06/58e900c5eb97430e819064d5-1-300x156.png' %} 300w"
                                                      sizes="(max-width: 716px) 100vw, 716px"/></div>
                                         </div>
                                     </div>
@@ -1229,22 +1227,22 @@
                                     <div class="elementor-image-carousel swiper-wrapper">
                                         <div class="swiper-slide">
                                             <figure class="swiper-slide-inner"><img class="swiper-slide-image"
-                                                                                    src="wp-content/uploads/elementor/thumbs/nft-placeholder2-p7hl9xe75fh9409q3a0kl671y79obj40pvt8xebaf0.jpg"
+                                                                                    src="{% static 'wp-content/uploads/elementor/thumbs/nft-placeholder2-p7hl9xe75fh9409q3a0kl671y79obj40pvt8xebaf0.jpg' %}"
                                                                                     alt="nft-placeholder2"/></figure>
                                         </div>
                                         <div class="swiper-slide">
                                             <figure class="swiper-slide-inner"><img class="swiper-slide-image"
-                                                                                    src="wp-content/uploads/elementor/thumbs/nft-placeholder3-p7hl9viirreogscge97bg6o4rfixw4wk1mi9yue2rg.jpg"
+                                                                                    src="{% static 'wp-content/uploads/elementor/thumbs/nft-placeholder3-p7hl9viirreogscge97bg6o4rfixw4wk1mi9yue2rg.jpg' %}"
                                                                                     alt="nft-placeholder3"/></figure>
                                         </div>
                                         <div class="swiper-slide">
                                             <figure class="swiper-slide-inner"><img class="swiper-slide-image"
-                                                                                    src="wp-content/uploads/elementor/thumbs/nft-placeholder4-e1622750756577-p84yor6bhlc6b95ixnktady0rjmxa5lgnk3z7xsvi4.png"
+                                                                                    src="{% static 'wp-content/uploads/elementor/thumbs/nft-placeholder4-e1622750756577-p84yor6bhlc6b95ixnktady0rjmxa5lgnk3z7xsvi4.png' %}"
                                                                                     alt="nft-placeholder4"/></figure>
                                         </div>
                                         <div class="swiper-slide">
                                             <figure class="swiper-slide-inner"><img class="swiper-slide-image"
-                                                                                    src="wp-content/uploads/elementor/thumbs/nft-placeholder1-p7hla07ppxl42u5mmt8ganhfqcvrymf7q9rpd873wc.png"
+                                                                                    src="{% static 'wp-content/uploads/elementor/thumbs/nft-placeholder1-p7hla07ppxl42u5mmt8ganhfqcvrymf7q9rpd873wc.png' %}"
                                                                                     alt="nft-placeholder1"/></figure>
                                         </div>
                                     </div>
@@ -1283,9 +1281,9 @@
                                              data-widget_type="image.default">
                                             <div class="elementor-widget-container">
                                                 <img width="800" height="864"
-                                                     src="wp-content/uploads/2021/06/Founder_-_The_Dogefather-948x1024.png"
+                                                     src="{% static 'wp-content/uploads/2021/06/Founder_-_The_Dogefather-948x1024.png' %}"
                                                      class="attachment-large size-large" alt="Dogefather" loading="lazy"
-                                                     srcset="https://newsite.dogefather.space/wp-content/uploads/2021/06/Founder_-_The_Dogefather-948x1024.png 948w, https://newsite.dogefather.space/wp-content/uploads/2021/06/Founder_-_The_Dogefather-278x300.png 278w, https://newsite.dogefather.space/wp-content/uploads/2021/06/Founder_-_The_Dogefather-768x829.png 768w, https://newsite.dogefather.space/wp-content/uploads/2021/06/Founder_-_The_Dogefather.png 1000w"
+                                                     srcset="{% static 'wp-content/uploads/2021/06/Founder_-_The_Dogefather-948x1024.png' %} 948w, {% static 'wp-content/uploads/2021/06/Founder_-_The_Dogefather-278x300.png' %} 278w, {% static 'wp-content/uploads/2021/06/Founder_-_The_Dogefather-768x829.png' %} 768w, {% static 'wp-content/uploads/2021/06/Founder_-_The_Dogefather.png' %} 1000w"
                                                      sizes="(max-width: 800px) 100vw, 800px"/></div>
                                         </div>
                                         <div class="elementor-element elementor-element-2757035 elementor-widget elementor-widget-heading"
@@ -1312,9 +1310,9 @@
                                              data-widget_type="image.default">
                                             <div class="elementor-widget-container">
                                                 <img width="800" height="864"
-                                                     src="wp-content/uploads/2021/06/unnamedD-948x1024.png"
+                                                     src="{% static 'wp-content/uploads/2021/06/unnamedD-948x1024.png' %}"
                                                      class="attachment-large size-large" alt="Dogepapa" loading="lazy"
-                                                     srcset="https://newsite.dogefather.space/wp-content/uploads/2021/06/unnamedD-948x1024.png 948w, https://newsite.dogefather.space/wp-content/uploads/2021/06/unnamedD-278x300.png 278w, https://newsite.dogefather.space/wp-content/uploads/2021/06/unnamedD-768x829.png 768w, https://newsite.dogefather.space/wp-content/uploads/2021/06/unnamedD.png 1000w"
+                                                     srcset="{% static 'wp-content/uploads/2021/06/unnamedD-948x1024.png' %} 948w, {% static 'wp-content/uploads/2021/06/unnamedD-278x300.png' %} 278w, {% static 'wp-content/uploads/2021/06/unnamedD-768x829.png' %} 768w, {% static 'wp-content/uploads/2021/06/unnamedD.png' %} 1000w"
                                                      sizes="(max-width: 800px) 100vw, 800px"/></div>
                                         </div>
                                         <div class="elementor-element elementor-element-ae9eff0 elementor-widget elementor-widget-heading"
@@ -1429,14 +1427,14 @@
                                                                     </div>
                                                                     <i class="copy-address"
                                                                        data-clipboard-text="0x80fBbAc2ceaC996DCf3D44D8d5c1B1b067d790dB">
-                                                                        <img src="wp-content/uploads/2021/05/copy-ico.svg"
+                                                                        <img src="{% static 'wp-content/uploads/2021/05/copy-ico.svg %}"
                                                                              alt=""/>
                                                                         <strong>Copy</strong>
                                                                     </i>
 
                                                                 </div>
                                                             </div>
-                                                            <script src="../cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+                                                            <script src="{% static 'js/clipboard.min.js' %}"></script>
                                                             <script>
                                                                 new ClipboardJS('.copy-address');
                                                             </script>
@@ -1452,7 +1450,7 @@
                                                              aria-labelledby="elementor-tab-title-1952" tabindex="0"
                                                              hidden="hidden">
                                                             <div style="text-align: center;"><p><img loading="lazy"
-                                                                                                     src="wp-content/uploads/2021/05/ethlogo.png"
+                                                                                                     src="{% static 'wp-content/uploads/2021/05/ethlogo.png' %}"
                                                                                                      alt="eth logo"
                                                                                                      width="100px"
                                                                                                      height="100px"/>
@@ -1464,12 +1462,12 @@
                                                                     </div>
                                                                     <p><i class="copy-address"
                                                                           data-clipboard-text="0x80fBbAc2ceaC996DCf3D44D8d5c1B1b067d790dB"><br/><img
-                                                                            src="wp-content/uploads/2021/05/copy-ico.svg"
+                                                                            src="{% static 'wp-content/uploads/2021/05/copy-ico.svg' %}"
                                                                             alt=""/><br/><strong>Copy</strong><br/></i>
                                                                     </p></div>
                                                             </div>
                                                             <p>
-                                                                <script src="../cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+                                                                <script src="{% static 'js/clipboard.min.js' %}"></script>
                                                                 <br/>
                                                                 <script>
                                                                     new ClipboardJS('.copy-address');
@@ -1489,7 +1487,7 @@
                                                             <div style="text-align: center;">
 
                                                                 <img loading="lazy"
-                                                                     src="wp-content/uploads/2021/05/usdtlogo.ico"
+                                                                     src="{% static 'wp-content/uploads/2021/05/usdtlogo.ico' %}"
                                                                      alt="usdt logo" width="100px" height="100px"/>
                                                                 <h5>You can send USDT contributions here:</h5>
                                                             </div>
@@ -1500,14 +1498,14 @@
                                                                     </div>
                                                                     <i class="copy-address"
                                                                        data-clipboard-text="0x80fBbAc2ceaC996DCf3D44D8d5c1B1b067d790dB">
-                                                                        <img src="wp-content/uploads/2021/05/copy-ico.svg"
+                                                                        <img src="{% static 'wp-content/uploads/2021/05/copy-ico.svg' %}"
                                                                              alt=""/>
                                                                         <strong>Copy</strong>
                                                                     </i>
 
                                                                 </div>
                                                             </div>
-                                                            <script src="../cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+                                                            <script src=".{% static 'js/clipboard.min.js' %}"></script>
                                                             <script>
                                                                 new ClipboardJS('.copy-address');
                                                             </script>
@@ -1525,7 +1523,7 @@
                                                             <div style="text-align: center;">
 
                                                                 <img loading="lazy"
-                                                                     src="wp-content/uploads/2021/05/btclogo.png"
+                                                                     src="{% static 'wp-content/uploads/2021/05/btclogo.png' %}"
                                                                      alt="btc logo" width="100px" height="100px"/>
                                                                 <h5>You can send BTC contributions here:</h5>
                                                             </div>
@@ -1536,14 +1534,14 @@
                                                                     </div>
                                                                     <i class="copy-address"
                                                                        data-clipboard-text="0x80fBbAc2ceaC996DCf3D44D8d5c1B1b067d790dB">
-                                                                        <img src="wp-content/uploads/2021/05/copy-ico.svg"
+                                                                        <img src="{% static 'wp-content/uploads/2021/05/copy-ico.svg' %}"
                                                                              alt=""/>
                                                                         <strong>Copy</strong>
                                                                     </i>
 
                                                                 </div>
                                                             </div>
-                                                            <script src="../cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+                                                            <script src="{% static 'js/clipboard.min.js' %}"></script>
                                                             <script>
                                                                 new ClipboardJS('.copy-address');
                                                             </script>
@@ -1570,9 +1568,9 @@
                         <div class="elementor-element elementor-element-793dd3e elementor-widget elementor-widget-image"
                              data-id="793dd3e" data-element_type="widget" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img width="256" height="256" src="wp-content/uploads/2021/05/download-2.png"
+                                <img width="256" height="256" src="{% static 'wp-content/uploads/2021/05/download-2.png' %}"
                                      class="attachment-large size-large" alt="" loading="lazy"
-                                     srcset="https://newsite.dogefather.space/wp-content/uploads/2021/05/download-2.png 256w, https://newsite.dogefather.space/wp-content/uploads/2021/05/download-2-150x150.png 150w"
+                                     srcset="{% static 'wp-content/uploads/2021/05/download-2.png' %} 256w, {% static 'wp-content/uploads/2021/05/download-2-150x150.png' %} 150w"
                                      sizes="(max-width: 256px) 100vw, 256px"/></div>
                         </div>
                     </div>
@@ -1583,7 +1581,7 @@
                         <div class="elementor-element elementor-element-e787150 elementor-widget elementor-widget-image"
                              data-id="e787150" data-element_type="widget" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img width="167" height="46" src="wp-content/uploads/2021/05/bkex-logo.png"
+                                <img width="167" height="46" src="{% static 'wp-content/uploads/2021/05/bkex-logo.png' %}"
                                      class="attachment-large size-large" alt="" loading="lazy"/></div>
                         </div>
                     </div>
@@ -1595,7 +1593,7 @@
                              data-id="58261ff" data-element_type="widget" data-widget_type="image.default">
                             <div class="elementor-widget-container">
                                 <img width="223" height="226"
-                                     src="wp-content/uploads/2021/06/download__1_-removebg-preview-1.png"
+                                     src="{% static 'wp-content/uploads/2021/06/download__1_-removebg-preview-1.png' %}"
                                      class="attachment-full size-full" alt="" loading="lazy"/></div>
                         </div>
                     </div>
@@ -1607,9 +1605,9 @@
                              data-id="d1ba0a0" data-element_type="widget" data-widget_type="image.default">
                             <div class="elementor-widget-container">
                                 <img width="250" height="250"
-                                     src="wp-content/uploads/2021/05/thumbnail-007177f3eca19695592f0b8b0eabbdae282b54154e1be912285c9034ea6cbaf2.png"
+                                     src="{% static 'wp-content/uploads/2021/05/thumbnail-007177f3eca19695592f0b8b0eabbdae282b54154e1be912285c9034ea6cbaf2.png' %}"
                                      class="attachment-large size-large" alt="" loading="lazy"
-                                     srcset="https://newsite.dogefather.space/wp-content/uploads/2021/05/thumbnail-007177f3eca19695592f0b8b0eabbdae282b54154e1be912285c9034ea6cbaf2.png 250w, https://newsite.dogefather.space/wp-content/uploads/2021/05/thumbnail-007177f3eca19695592f0b8b0eabbdae282b54154e1be912285c9034ea6cbaf2-150x150.png 150w"
+                                     srcset="{% static 'wp-content/uploads/2021/05/thumbnail-007177f3eca19695592f0b8b0eabbdae282b54154e1be912285c9034ea6cbaf2.png' %} 250w, {% static 'wp-content/uploads/2021/05/thumbnail-007177f3eca19695592f0b8b0eabbdae282b54154e1be912285c9034ea6cbaf2-150x150.png' %} 150w"
                                      sizes="(max-width: 250px) 100vw, 250px"/></div>
                         </div>
                     </div>
@@ -1620,9 +1618,9 @@
                         <div class="elementor-element elementor-element-4391583 elementor-widget elementor-widget-image"
                              data-id="4391583" data-element_type="widget" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img width="800" height="800" src="wp-content/uploads/2021/05/Consumer_Wordmark.svg"
+                                <img width="800" height="800" src="{% static 'wp-content/uploads/2021/05/Consumer_Wordmark.svg' %}"
                                      class="attachment-large size-large" alt="" loading="lazy"
-                                     srcset="https://newsite.dogefather.space/wp-content/uploads//2021/05/Consumer_Wordmark.svg 150w, https://newsite.dogefather.space/wp-content/uploads//2021/05/Consumer_Wordmark.svg 300w, https://newsite.dogefather.space/wp-content/uploads//2021/05/Consumer_Wordmark.svg 1024w"
+                                     srcset="{% static 'wp-content/uploads//2021/05/Consumer_Wordmark.svg' %} 150w, {% static 'wp-content/uploads//2021/05/Consumer_Wordmark.svg' %} 300w, {% static 'wp-content/uploads//2021/05/Consumer_Wordmark.svg' %} 1024w"
                                      sizes="(max-width: 800px) 100vw, 800px"/></div>
                         </div>
                     </div>
@@ -1634,9 +1632,9 @@
                              data-id="d7d02ad" data-element_type="widget" data-widget_type="image.default">
                             <div class="elementor-widget-container">
                                 <img width="800" height="495"
-                                     src="wp-content/uploads/2021/06/imageLikeEmbed_1.pngst_-1024x633.png"
+                                     src="{% static 'wp-content/uploads/2021/06/imageLikeEmbed_1.pngst_-1024x633.png' %}"
                                      class="attachment-large size-large" alt="" loading="lazy"
-                                     srcset="https://newsite.dogefather.space/wp-content/uploads/2021/06/imageLikeEmbed_1.pngst_-1024x633.png 1024w, https://newsite.dogefather.space/wp-content/uploads/2021/06/imageLikeEmbed_1.pngst_-300x186.png 300w, https://newsite.dogefather.space/wp-content/uploads/2021/06/imageLikeEmbed_1.pngst_-768x475.png 768w, https://newsite.dogefather.space/wp-content/uploads/2021/06/imageLikeEmbed_1.pngst_.png 1200w"
+                                     srcset="{% static 'wp-content/uploads/2021/06/imageLikeEmbed_1.pngst_-1024x633.png' %} 1024w, {% static 'wp-content/uploads/2021/06/imageLikeEmbed_1.pngst_-300x186.png' %} 300w, {% static 'wp-content/uploads/2021/06/imageLikeEmbed_1.pngst_-768x475.png' %} 768w, {% static 'wp-content/uploads/2021/06/imageLikeEmbed_1.pngst_.png' %} 1200w"
                                      sizes="(max-width: 800px) 100vw, 800px"/></div>
                         </div>
                     </div>
@@ -1652,7 +1650,7 @@
      data-id="93fa5f0" data-element_type="widget" data-widget_type="theme-site-logo.default">
     <div class="elementor-widget-container">
         <a href="index.html">
-            <img width="150" height="150" src="wp-content/uploads/2021/05/photo_2021-05-17_11-53-03-150x150.png"
+            <img width="150" height="150" src="{% static 'wp-content/uploads/2021/05/photo_2021-05-17_11-53-03-150x150.png' %}"
                  class="attachment-thumbnail size-thumbnail" alt="" loading="lazy"/> </a>
     </div>
 </div>
@@ -1823,9 +1821,9 @@
                         <div class="elementor-element elementor-element-f407b14 elementor-widget elementor-widget-image"
                              data-id="f407b14" data-element_type="widget" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img width="693" height="855" src="wp-content/uploads/2021/05/Wechat-QR.png"
+                                <img width="693" height="855" src="{% static 'wp-content/uploads/2021/05/Wechat-QR.png' %}"
                                      class="attachment-large size-large" alt="" loading="lazy"
-                                     srcset="https://newsite.dogefather.space/wp-content/uploads/2021/05/Wechat-QR.png 693w, https://newsite.dogefather.space/wp-content/uploads/2021/05/Wechat-QR-243x300.png 243w"
+                                     srcset="{% static 'wp-content/uploads/2021/05/Wechat-QR.png' %} 693w, {% static 'wp-content/uploads/2021/05/Wechat-QR-243x300.png' %} 243w"
                                      sizes="(max-width: 693px) 100vw, 693px"/></div>
                         </div>
                     </div>
@@ -1843,10 +1841,10 @@
     /* ]]> */
 </script>
 <script type='text/javascript'
-        src='wp-content/plugins/happy-elementor-addons/assets/js/happy-addons.minb4fc.js?ver=2.24.1'
+        src="{% static 'wp-content/plugins/happy-elementor-addons/assets/js/happy-addons.minb4fc.js?ver=2.24.1' %}"
         id='happy-elementor-addons-js'></script>
 <script type='text/javascript'
-        src='wp-content/plugins/elementskit-lite/libs/framework/assets/js/frontend-scriptac31.js?ver=2.2.4'
+        src="{% static 'wp-content/plugins/elementskit-lite/libs/framework/assets/js/frontend-scriptac31.js?ver=2.2.4' %}"
         id='elementskit-framework-js-frontend-js'></script>
 <script type='text/javascript' id='elementskit-framework-js-frontend-js-after'>
     var elementskit = {
@@ -1856,69 +1854,38 @@
 
 </script>
 <script type='text/javascript'
-        src='wp-content/plugins/elementskit-lite/widgets/init/assets/js/widget-scriptsac31.js?ver=2.2.4'
+        src="{% static 'wp-content/plugins/elementskit-lite/widgets/init/assets/js/widget-scriptsac31.js?ver=2.2.4' %}"
         id='ekit-widget-scripts-js'></script>
-<script type='text/javascript' src='wp-includes/js/wp-embed.min9f31.js?ver=5.7.2' id='wp-embed-js'></script>
+<script type='text/javascript' src="{% static 'wp-includes/js/wp-embed.min9f31.js?ver=5.7.2' id='wp-embed-js' %}"></script>
 <script type='text/javascript'
-        src='wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.minf269.js?ver=1.0.1'
+        src="{% static 'wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.minf269.js?ver=1.0.1' %}"
         id='smartmenus-js'></script>
 <script type='text/javascript'
-        src='wp-content/plugins/happy-elementor-addons/assets/vendor/anime/lib/anime.minb4fc.js?ver=2.24.1'
+        src="{% static 'wp-content/plugins/happy-elementor-addons/assets/vendor/anime/lib/anime.minb4fc.js?ver=2.24.1' %}"
         id='anime-js'></script>
 <script type='text/javascript'
-        src='wp-content/plugins/elementor/assets/lib/jquery-numerator/jquery-numerator.min3958.js?ver=0.2.1'
+        src="{% static 'wp-content/plugins/elementor/assets/lib/jquery-numerator/jquery-numerator.min3958.js?ver=0.2.1' %}"
         id='jquery-numerator-js'></script>
-<script type='text/javascript' src='wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.mindeae.js?ver=3.2.1'
+<script type='text/javascript' src="{% static 'wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.mindeae.js?ver=3.2.1' %}"
         id='elementor-pro-webpack-runtime-js'></script>
-<script type='text/javascript' src='wp-content/plugins/elementor/assets/js/webpack.runtime.mine1e3.js?ver=3.2.4'
+<script type='text/javascript' src="{% static 'wp-content/plugins/elementor/assets/js/webpack.runtime.mine1e3.js?ver=3.2.4' %}"
         id='elementor-webpack-runtime-js'></script>
-<script type='text/javascript' src='wp-content/plugins/elementor/assets/js/frontend-modules.mine1e3.js?ver=3.2.4'
+<script type='text/javascript' src="{% static 'wp-content/plugins/elementor/assets/js/frontend-modules.mine1e3.js?ver=3.2.4' %}"
         id='elementor-frontend-modules-js'></script>
 <script type='text/javascript'
-        src='wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.mindeae.js?ver=3.2.1'
+        src="{% static 'wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.mindeae.js?ver=3.2.1' %}"
         id='elementor-sticky-js'></script>
-<script type='text/javascript' id='elementor-pro-frontend-js-before'>
-    var ElementorProFrontendConfig = {
-        "ajaxurl": "https:\/\/newsite.dogefather.space\/wp-admin\/admin-ajax.php",
-        "nonce": "ecf624e040",
-        "urls": {"assets": "https:\/\/newsite.dogefather.space\/wp-content\/plugins\/elementor-pro\/assets\/"},
-        "i18n": {"toc_no_headings_found": "No headings were found on this page."},
-        "shareButtonsNetworks": {
-            "facebook": {"title": "Facebook", "has_counter": true},
-            "twitter": {"title": "Twitter"},
-            "google": {"title": "Google+", "has_counter": true},
-            "linkedin": {"title": "LinkedIn", "has_counter": true},
-            "pinterest": {"title": "Pinterest", "has_counter": true},
-            "reddit": {"title": "Reddit", "has_counter": true},
-            "vk": {"title": "VK", "has_counter": true},
-            "odnoklassniki": {"title": "OK", "has_counter": true},
-            "tumblr": {"title": "Tumblr"},
-            "digg": {"title": "Digg"},
-            "skype": {"title": "Skype"},
-            "stumbleupon": {"title": "StumbleUpon", "has_counter": true},
-            "mix": {"title": "Mix"},
-            "telegram": {"title": "Telegram"},
-            "pocket": {"title": "Pocket", "has_counter": true},
-            "xing": {"title": "XING", "has_counter": true},
-            "whatsapp": {"title": "WhatsApp"},
-            "email": {"title": "Email"},
-            "print": {"title": "Print"}
-        },
-        "facebook_sdk": {"lang": "en_US", "app_id": ""},
-        "lottie": {"defaultAnimationUrl": "https:\/\/newsite.dogefather.space\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}
-    };
-</script>
-<script type='text/javascript' src='wp-content/plugins/elementor-pro/assets/js/frontend.mindeae.js?ver=3.2.1'
+<script type='text/javascript' src="{% static 'wp-content/plugins/elementor-pro/assets/js/frontend.mindeae.js?ver=3.2.1' %}"
         id='elementor-pro-frontend-js'></script>
-<script type='text/javascript' src='wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min05da.js?ver=4.0.2'
+<script type='text/javascript' src="{% static 'wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min05da.js?ver=4.0.2' %}"
         id='elementor-waypoints-js'></script>
-<script type='text/javascript' src='wp-includes/js/jquery/ui/core.min35d0.js?ver=1.12.1'
+<script type='text/javascript' src="{% static 'wp-includes/js/jquery/ui/core.min35d0.js?ver=1.12.1' %}"
         id='jquery-ui-core-js'></script>
-<script type='text/javascript' src='wp-content/plugins/elementor/assets/lib/swiper/swiper.min48f5.js?ver=5.3.6'
+<script type='text/javascript' src="{% static 'wp-content/plugins/elementor/assets/lib/swiper/swiper.min48f5.js?ver=5.3.6' %}"
         id='swiper-js'></script>
-<script type='text/javascript' src='wp-content/plugins/elementor/assets/lib/share-link/share-link.mine1e3.js?ver=3.2.4'
+<script type='text/javascript' src="{% static 'wp-content/plugins/elementor/assets/lib/share-link/share-link.mine1e3.js?ver=3.2.4' %}"
         id='share-link-js'></script>
-<script type='text/javascript' src='wp-content/plugins/elementor/assets/lib/dialog/dialog.mina288.js?ver=4.8.1'
+<script type='text/javascript' src="{% static 'wp-content/plugins/elementor/assets/lib/dialog/dialog.mina288.js?ver=4.8.1' %}"
         id='elementor-dialog-js'></script>
 <script type='text/javascript' id='elementor-frontend-js-before'>
     var elementorFrontendConfig = {
@@ -1962,7 +1929,7 @@
             "landing-pages": true,
             "form-submissions": true
         },
-        "urls": {"assets": "https:\/\/newsite.dogefather.space\/wp-content\/plugins\/elementor\/assets\/"},
+        // "urls": {"assets": "https:\/\/newsite.dogefather.space\/wp-content\/plugins\/elementor\/assets\/"},
         "settings": {"page": [], "editorPreferences": []},
         "kit": {
             "body_background_background": "classic",
@@ -1978,7 +1945,7 @@
         "post": {"id": 297, "title": "Dogefather", "excerpt": "", "featuredImage": false}
     };
 </script>
-<script type='text/javascript' src='wp-content/plugins/elementor/assets/js/frontend.mine1e3.js?ver=3.2.4'
+<script type='text/javascript' src="{% static 'wp-content/plugins/elementor/assets/js/frontend.mine1e3.js?ver=3.2.4' %}"
         id='elementor-frontend-js'></script>
 <script type='text/javascript' id='elementor-frontend-js-after'>
     !function (t) {
@@ -2046,18 +2013,18 @@
     }(jQuery);
 </script>
 <script type='text/javascript'
-        src='wp-content/plugins/elementor-pro/assets/js/preloaded-elements-handlers.mindeae.js?ver=3.2.1'
+        src="{% static 'wp-content/plugins/elementor-pro/assets/js/preloaded-elements-handlers.mindeae.js?ver=3.2.1' %}"
         id='pro-preloaded-elements-handlers-js'></script>
 <script type='text/javascript'
-        src='wp-content/plugins/elementskit-lite/widgets/init/assets/js/slick.minac31.js?ver=2.2.4'
+        src="{% static 'wp-content/plugins/elementskit-lite/widgets/init/assets/js/slick.minac31.js?ver=2.2.4' %}"
         id='ekit-slick-js'></script>
 <script type='text/javascript'
-        src='wp-content/plugins/elementskit-lite/widgets/init/assets/js/elementorac31.js?ver=2.2.4'
+        src="{% static 'wp-content/plugins/elementskit-lite/widgets/init/assets/js/elementorac31.js?ver=2.2.4' %}"
         id='elementskit-elementor-js'></script>
-<script type='text/javascript' src='wp-content/plugins/elementor/assets/js/preloaded-modules.mine1e3.js?ver=3.2.4'
+<script type='text/javascript' src="{% static 'wp-content/plugins/elementor/assets/js/preloaded-modules.mine1e3.js?ver=3.2.4' %}"
         id='preloaded-modules-js'></script>
 <script type='text/javascript'
-        src='wp-content/plugins/elementskit-lite/modules/controls/assets/js/widgetarea-editorac31.js?ver=2.2.4'
+        src="{% static 'wp-content/plugins/elementskit-lite/modules/controls/assets/js/widgetarea-editorac31.js?ver=2.2.4' %}"
         id='elementskit-js-widgetarea-control-editor-js'></script>
 
 </body>

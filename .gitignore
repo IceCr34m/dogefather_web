@@ -67,4 +67,4 @@ target/
 .idea/
 
 #db
-db.sqlite3
+#db.sqlite3
