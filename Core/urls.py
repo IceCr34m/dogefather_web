@@ -18,5 +18,5 @@ urlpatterns = [
     path('tesla', tesla_view, name='tesla'),
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps},
          name='django.contrib.sitemaps.views.sitemap'),
-    path("robots.txt", TemplateView.as_view(template_name="Core/robots.txt", content_type="text/plain")),  #add the robots.txt file
+    # path("robots.txt", TemplateView.as_view(template_name="Core/robots.txt", content_type="text/plain")),  #add the robots.txt file, Moved to static after
 ]

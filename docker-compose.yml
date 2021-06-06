@@ -1,0 +1,30 @@
+version: "3.2"
+
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: ./deployement/nginx/Dockerfile.yml
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ${STATIC_DIR}:/usr/src/app/static_cdn
+      - ${MEDIA_DIR}:/usr/src/app/media_cdn
+      - ${CERT_DIR}:/etc/letsencrypt
+    depends_on:
+      - web
+
+  web:
+    build:
+      context: .
+      dockerfile: ./deployement/django/Dockerfile.yml
+    expose:
+      - "8000"
+    volumes:
+      - ${STATIC_DIR}:/usr/src/app/static_cdn
+      - ${MEDIA_DIR}:/usr/src/app/media_cdn
+      - ${DB_DIR}:/usr/src/app/db
+    command: >
+      sh -c "python manage.py collectstatic --no-input
+      && gunicorn --access-logfile - --log-level debug -b ${IP_ADDR}:${PORT_INT} --max-requests ${MAX_REQUESTS} --max-requests-jitter ${MAX_REQUESTS_JITTER} -w ${WORKERS} dogefather_web.wsgi:application"
