@@ -1,5 +1,6 @@
-
-
+"""
+This file is just a scratch for now
+"""
 
 API_KEY = ""
 

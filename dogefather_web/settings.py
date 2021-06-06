@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sitemaps',
 
     # My apps
-    'Core',
+    'Core.apps.CoreConfig',
 ]
 
 SITE_ID = 1
