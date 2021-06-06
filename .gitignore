@@ -65,6 +65,3 @@ target/
 
 #Pycharm
 .idea/
-
-#db
-#db.sqlite3
