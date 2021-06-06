@@ -75,6 +75,7 @@ Commands:
   ```
   docker-compose -f docker-compose.yml --env-file ./deployement/.env logs
   ```
+  go bash : sudo docker-compose --env-file ./deployment/.env exec web bash
 # Pinging Goole
 
 Pinging Google via manage.py¶
