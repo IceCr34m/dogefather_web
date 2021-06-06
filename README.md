@@ -49,8 +49,8 @@ ssl_protocols TLSv1.2 TLSv1.3;
 ssl_prefer_server_ciphers off;
 
 ssl_ciphers "ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384";
-crezaate this file : sudo openssl dhparam -out /etc/letsencrypt/dhparam.pem
-will take a while
+crezaate this file : sudo openssl dhparam -out /etc/letsencrypt/dhparam.pem 2048
+will take a while : change to 1024 if you want less time
 # Pinging Goole
 
 Pinging Google via manage.py¶
