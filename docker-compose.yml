@@ -3,7 +3,7 @@ version: "3.2"
 services:
   nginx:
     build:
-      context: .
+      context: ./deployement/nginx/
       dockerfile: ./deployement/nginx/Dockerfile.yml
     ports:
       - 80:80

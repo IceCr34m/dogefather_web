@@ -51,6 +51,30 @@ ssl_prefer_server_ciphers off;
 ssl_ciphers "ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384";
 crezaate this file : sudo openssl dhparam -out /etc/letsencrypt/dhparam.pem 2048
 will take a while : change to 1024 if you want less time
+
+### Runing the server
+
+
+Initially, open a CLI in the location of the `docker-compose.yml` file.
+
+Commands:
+
+- Build the docker images and run the website:
+  ```
+  docker-compose -f docker-compose.yml --env-file ./deployement/.env up -d --build
+  ```
+- Run the website without building it again:
+  ```
+  docker-compose -f docker-compose.yml --env-file ./deployement/.env up -d
+  ```
+- Continue running the website from a **stop** state:
+  ```
+  docker-compose -f docker-compose.yml --env-file ./deployement/.env start
+  ```
+- See the logs of the containers that are running:
+  ```
+  docker-compose -f docker-compose.yml --env-file ./deployement/.env logs
+  ```
 # Pinging Goole
 
 Pinging Google via manage.py¶
