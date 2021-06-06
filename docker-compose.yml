@@ -26,5 +26,4 @@ services:
       - ${MEDIA_DIR}:/usr/src/app/media_cdn
       - ${DB_DIR}:/usr/src/app/db
     command: >
-      sh -c "python manage.py collectstatic --no-input
-      && gunicorn --access-logfile - --log-level debug -b ${IP_ADDR}:${PORT_INT} --max-requests ${MAX_REQUESTS} --max-requests-jitter ${MAX_REQUESTS_JITTER} -w ${WORKERS} dogefather_web.wsgi:application"
+      sh -c "gunicorn --access-logfile - --log-level debug -b ${IP_ADDR}:${PORT_INT} --max-requests ${MAX_REQUESTS} --max-requests-jitter ${MAX_REQUESTS_JITTER} -w ${WORKERS} dogefather_web.wsgi:application"
