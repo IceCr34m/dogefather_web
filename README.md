@@ -122,7 +122,7 @@ python manage.py ping_google [/sitemap.xml]
 Use this option if your sitemap uses http rather than https.
 
 
-## Testing the website locally (work still in progress)
+## Testing the website locally (Finished probably)
 
 ### install python dependecies:
 You're better by creating a separate python envirenement for the project first and activating it  whenever working on the project, if you're interested in the idea look here: https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/
