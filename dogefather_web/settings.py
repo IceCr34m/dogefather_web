@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'med#^y++cryq054cf+g*@jy+)b6gf+qes2l-2ffemd2i8ew))2'
 SECURE_REFERRER_POLICY = "no-referrer-when-downgrade"
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
